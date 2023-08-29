@@ -16,17 +16,19 @@ export function Hero() {
           <Heading size="3xl" className={styles.title} withAccent>
             AKAI Camp
           </Heading>
-          <Text size="2xl" className={styles.subtitle}>
+          <div>
+          <Text size="2xl" className={styles.date}>
             21.10.2023
           </Text>
-          <div className={styles.badgesContainer}>
-            <div className={styles.badgeWrapper}>
-              <div className={styles.badgeDescription}>
-                <Text size="xl">Centrum wykładowe PUT</Text>
-                <Text size="xl">Kampus Piotrowo</Text>
-              </div>
-            </div>
+
           </div>
+          <div >
+              <Text className={styles.place}  size="xl">Centrum wykładowe PUT</Text>
+          </div>
+          <div>
+            <Text className={styles.address} size="xl">Kampus Piotrowo</Text>
+          </div>
+               
         </div>
       </div>
     </Section>

@@ -9,12 +9,22 @@
   padding: var(--space-s) var(--space-m);
   font-size: var(--space-xl);
   text-align: center;
+  animation: showup 3s forwards;
 }
 
 .primary {
-  background-color: var(--color-orange);
+  background-color: var(--color-text-alternative-strong);
 }
 
 .secondary {
   background-color: var(--color-text-strong);
+}
+
+@keyframes showup{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
