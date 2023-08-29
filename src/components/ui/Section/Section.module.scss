@@ -1,0 +1,45 @@
+%wrapperBackground {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.white {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.purple {
+  color: var(--color-text-alternative);
+  position: relative;
+
+  &::before {
+    @extend %wrapperBackground;
+
+    background: var(--theme-primary-color-500) url("../../../assets/circle-pattern.svg");
+    background-repeat: repeat-y;
+    background-position: 50% 0;
+    opacity: 0.1;
+    z-index: -1;
+  }
+
+  &::after {
+    @extend %wrapperBackground;
+
+    background: var(--theme-primary-color-700);
+    z-index: -2;
+  }
+}
+
+.innerWrapper {
+  margin: auto;
+  max-width: var(--section-max-width);
+  padding: var(--section-spacing-vertical) var(--section-spacing-horizontal);
+}

@@ -1,0 +1,11 @@
+{
+  "title": "AKAI Camp 2023",
+  "short_name": "AKAI Camp 2023",
+  "name": "AKAI Camp 2023",
+  "description": "AKAI Camp 2023",
+  "start_url": "/",
+  "background_color": "#2B448C",
+  "theme_color": "#2B448C",
+  "display": "standalone",
+  "manifest_version": 1
+}

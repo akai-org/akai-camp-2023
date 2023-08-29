@@ -1,0 +1,58 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer {
+  margin: var(--space-l) auto var(--space-xl);
+  flex: 1;
+}
+
+.textField {
+  text-align: center;
+  margin-bottom: var(--space-m);
+}
+
+.pictureWrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture {
+  max-height: 720px;
+  max-width: 100%;
+  margin-bottom: var(--space-s);
+  border-radius: var(--space-m);
+}
+
+.coordinatorItem {
+  margin-bottom: var(--space-s);
+}
+
+.coordinatorList {
+  list-style: none;
+  text-align: center;
+}
+
+.coordinatorTitle {
+  font-weight: bold;
+  margin: 0;
+}
+
+// tablet
+@media (min-width: 480px) {
+  .textContainer {
+    margin: var(--space-xl) auto;
+  }
+}
+
+// desktop
+@media (min-width: 1024px) {
+  .content {
+    flex-direction: row;
+    gap: var(--space-3xl);
+  }
+}

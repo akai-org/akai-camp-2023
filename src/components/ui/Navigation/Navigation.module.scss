@@ -1,0 +1,192 @@
+.container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--navbar-height);
+  z-index: 100;
+  background: var(--color-white);
+  box-shadow: 0 0 8px 2px rgb(0 0 0 / 0.33);
+}
+
+.innerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  margin: auto;
+  padding: var(--navbar-padding-vertical) var(--navbar-padding-horizontal);
+  max-width: var(--section-max-width);
+}
+
+.logoWrapper {
+  width: var(--navbar-logo-size);
+  height: var(--navbar-logo-size);
+}
+
+.logo {
+  width: var(--navbar-logo-size);
+  height: var(--navbar-logo-size);
+}
+
+.linksWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--color-white);
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform ease-in-out 0.25s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: var(--space-l);
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.link {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: var(--font-size-l);
+  transition: 0.25s color ease-in-out, 0.25s border-color ease-in-out;
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+
+  &:hover,
+  &.active {
+    color: var(--color-orange);
+  }
+
+  &:hover {
+    text-underline-offset: 8px;
+    border-color: var(--color-orange);
+  }
+}
+
+.separator {
+  width: 64px;
+  height: 2px;
+  background: var(--color-grey);
+  margin: var(--space-l) auto;
+}
+
+.hamburger {
+  display: none;
+}
+
+%hamburgerTriggerBar {
+  background: var(--color-blue);
+  position: relative;
+  display: block;
+  height: var(--navbar-hamburger-bar-height);
+  transition: transform 0.2s ease-out 0s, background-color 0.2s ease-out 0.2s,
+    top 0.2s ease-out 0.3s;
+  width: var(--navbar-hamburger-size);
+}
+
+%hamburgerTriggerBarChecked {
+  transition: top 0.2s ease-out 0s, background-color 0s ease 0.2s,
+    transform 0.2s ease-out 0.3s;
+}
+
+.hamburgerTrigger {
+  cursor: pointer;
+  margin: auto 0 auto auto;
+  padding: 20px 8px;
+
+  span {
+    @extend %hamburgerTriggerBar;
+
+    &::before {
+      @extend %hamburgerTriggerBar;
+
+      content: "";
+      top: var(--navbar-hamburger-bottom-bar-top-position);
+    }
+
+    &::after {
+      @extend %hamburgerTriggerBar;
+
+      content: "";
+      top: var(--navbar-hamburger-top-bar-top-position);
+    }
+  }
+}
+
+.hamburger:checked {
+  & ~ .linksWrapper {
+    transform: scale(1);
+
+    & .links {
+      opacity: 1;
+      transition: opacity 0.25s ease-in-out 0.25s;
+    }
+  }
+
+  & ~ .hamburgerTrigger span {
+    background: transparent;
+
+    @extend %hamburgerTriggerBarChecked;
+
+    &::before {
+      @extend %hamburgerTriggerBarChecked;
+
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      @extend %hamburgerTriggerBarChecked;
+
+      top: var(--navbar-hamburger-top-bar-opened-top-position);
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hamburgerTrigger {
+    display: none;
+  }
+
+  .linksWrapper {
+    width: auto;
+    height: auto;
+    position: static;
+    background: transparent;
+    transform: none;
+    transition: transform none;
+    margin: auto 0 auto auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .links {
+    height: auto;
+    opacity: 1;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: var(--space-l);
+  }
+
+  .link {
+    font-size: var(--font-size-s);
+  }
+
+  .separator {
+    width: 2px;
+    height: 16px;
+    margin: auto var(--space-l);
+  }
+}

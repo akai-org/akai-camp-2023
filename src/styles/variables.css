@@ -1,0 +1,108 @@
+:root {
+  /* ----- typography ----- */
+  --font-size-s: 1rem;
+  --font-size-m: 1.25rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-2xl: 3rem;
+  --font-size-3xl: 4rem;
+
+  /* ----- colors ----- */
+  --theme-primary-color-700: #2b448c;
+  --theme-primary-color-500: #3c4ca6;
+  --theme-primary-color-300: #8b88f2;
+  --color-text-primary: #f2dbae;
+  --color-text-strong: #f28705;
+  --color-text-alternative: #fff;
+  --color-text-alternative-strong: #f7a823;
+  --color-grey: #d8d8d8;
+  --color-black: #282828;
+  --color-discord: #5865f3;
+  --color-discord-dark: #4752c4;
+
+  /* ----- spacing ----- */
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 128px;
+
+  /* ----- border ----- */
+  --border-radius-default: 8px;
+
+  /* ----- section ----- */
+  --section-max-width: 1120px;
+  --section-spacing-vertical: 64px;
+  --section-spacing-horizontal: 64px;
+
+  /* ----- title ----- */
+  --title-spacing: var(--font-size-xl);
+
+  /* ----- navbar ----- */
+  --navbar-height: 96px;
+  --navbar-logo-size: 64px;
+  --navbar-padding-vertical: 16px;
+  --navbar-padding-horizontal: 64px;
+
+  /* ----- badge ----- */
+  --badge-sm-height: 64px;
+  --badge-normal-height: 96px;
+
+  /* ----- card ----- */
+  --card-height: 305px;
+  --card-width: 224px;
+
+  /* ----- schedule item ----- */
+  --icon-container-size: 64px;
+  --icon-size: 32px;
+
+  /* ----- FAQ----- */
+  --chevron-height: 32px;
+
+  /* ----- partners ----- */
+  --partner-icon-max-width: 196px;
+  --partner-icon-height: 96px;
+  --partner-icon-hover-scale: 1.125;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    /* ----- section ----- */
+    --section-spacing-vertical: 64px;
+    --section-spacing-horizontal: 48px;
+
+    /* ----- navbar ----- */
+    --navbar-padding-horizontal: 48px;
+    --navbar-hamburger-size: 48px;
+    --navbar-hamburger-bottom-bar-top-position: 14px;
+    --navbar-hamburger-top-bar-top-position: -20px;
+    --navbar-hamburger-bar-height: 6px;
+    --navbar-hamburger-top-bar-opened-top-position: -6px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    /* ----- section ----- */
+    --section-spacing-vertical: 48px;
+    --section-spacing-horizontal: 32px;
+
+    /* ----- title ----- */
+    --title-spacing: var(--font-size-l);
+
+    /* ----- navbar ----- */
+    --navbar-height: 64px;
+    --navbar-logo-size: 48px;
+    --navbar-padding-vertical: 8px;
+    --navbar-padding-horizontal: 16px;
+    --navbar-hamburger-size: 32px;
+    --navbar-hamburger-bottom-bar-top-position: 12px;
+    --navbar-hamburger-top-bar-top-position: -16px;
+    --navbar-hamburger-bar-height: 4px;
+    --navbar-hamburger-top-bar-opened-top-position: -4px;
+  }
+}
