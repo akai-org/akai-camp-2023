@@ -34,8 +34,17 @@
   display: none;
 
   .logo {
-    // TODO: why we have to set width of logo. Maybe is something wrong with original svg?
     width: 400px;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .badge{
+    transform: translate(50%, 30%) rotate(15deg);
+    margin: 0;
   }
 }
 
@@ -86,4 +95,9 @@
   .badgeDescription {
     min-width: 356px;
   }
+}
+
+@keyframes typing {
+  from {width: 0;}
+  to {width: 100%;}
 }

@@ -9,29 +9,20 @@ export function Hero() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/AkaiCamp_logo.svg" alt="logo" className={styles.logo} />
         </div>
-        <div>
+        <div className={styles.description}>
+          <Badge color="secondary" className={styles.badge}>
+                Stacjonarnie
+          </Badge>
           <Heading size="3xl" className={styles.title} withAccent>
-            AKAI Camp 2023
+            AKAI Camp
           </Heading>
           <Text size="2xl" className={styles.subtitle}>
-            Podtytuł
+            21.10.2023
           </Text>
           <div className={styles.badgesContainer}>
             <div className={styles.badgeWrapper}>
-              <Badge color="secondary" className={styles.badge}>
-                Offline
-              </Badge>
-              <Text size="xl" className={styles.badgeDescription}>
-                21.10.2023
-              </Text>
-            </div>
-            <div className={styles.badgeWrapper}>
-              <Badge color="secondary" className={styles.badge}>
-                Miasto
-              </Badge>
               <div className={styles.badgeDescription}>
-                <Text size="xl">Centrum wykładowe</Text>
-                <Text size="xl">PUT</Text>
+                <Text size="xl">Centrum wykładowe PUT</Text>
                 <Text size="xl">Kampus Piotrowo</Text>
               </div>
             </div>
