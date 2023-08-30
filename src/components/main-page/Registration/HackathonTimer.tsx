@@ -18,7 +18,7 @@ const datesConfig: ConfigItem[] = [
   { unit: "s", text: "seconds", modulo: 60, className: styles.seconds },
 ];
 
-const hackathonStartDate = dayjs("2022-11-04T17:00:00Z");
+const hackathonStartDate = dayjs("2023-10-21T10:30:00Z");
 
 export function HackathonTimer() {
   useIntervalUpdate();
@@ -35,7 +35,7 @@ export function HackathonTimer() {
             <Badge color="secondary" className={styles.badge}>
               {value}
             </Badge>
-            <Text size="xl">Rejestracja {text}</Text>
+            <Text className="registration" size="xl">Rejestracja {text}</Text>
           </div>
         );
       })}

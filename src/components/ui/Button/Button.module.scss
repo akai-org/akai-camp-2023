@@ -13,11 +13,11 @@
 }
 
 .primary {
-  background-color: var(--color-orange);
+  background-color: var( --color-text-strong);
 
   &:hover,
   &:active {
-    background-color: var(--color-orange-dark);
+    background-color: var(--color-text-alternative-strong);
   }
 }
 
