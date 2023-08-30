@@ -19,6 +19,7 @@
   text-align: center;
 
   &::before {
+    // TODO: replace image
     background: var(--theme-primary-color-300) url("../../../assets/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,6 +67,8 @@
 
 .badge {
   margin-bottom: var(--space-xl);
+  opacity: 0;
+  animation: showup 2s 3.5s forwards;
 }
 
 .badgeDescription {
@@ -115,5 +118,14 @@
   }
   50% {
     border-color: var(--color-text-primary);
+  }
+}
+
+@keyframes showup{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
