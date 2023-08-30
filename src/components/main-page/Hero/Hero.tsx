@@ -11,14 +11,14 @@ export function Hero() {
         </div>
         <div className={styles.description}>
           <Badge color="secondary" className={styles.badge}>
-                Stacjonarnie
+                vol.2023
           </Badge>
           <Heading size="3xl" className={styles.title} withAccent>
             AKAI Camp
           </Heading>
           <div>
           <Text size="2xl" className={styles.date}>
-            21.10.2023
+            21 październik
           </Text>
 
           </div>
