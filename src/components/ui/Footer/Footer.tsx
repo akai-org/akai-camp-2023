@@ -1,6 +1,5 @@
 import { facebook, github, linkedin, twitter } from "../Icon";
 import { Icon } from "components/ui";
-import { Text } from "components/ui";
 import { Badge } from "components/ui";
 import styles from "./Footer.module.scss";
 
@@ -35,8 +34,7 @@ export function Footer({}) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/AKAI_logo.svg" alt="logo" className={styles.logo} />
           <div className={styles.socialContainer}>
-           {/* <Text className={styles.foundUs} size="l">Znajdź nas na: </Text> */}
-           <Badge color="secondary" className={styles.foundUs} size="sm">Znajdź nas na: </Badge>
+           <Badge color="secondary" className={styles.findUs} size="sm">Znajdź nas na: </Badge>
             <div className={styles.socialIcons}>
               {socialIcons.map(({ url, icon, title }) => (
                 <a
