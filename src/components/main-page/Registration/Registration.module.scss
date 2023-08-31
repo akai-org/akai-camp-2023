@@ -9,7 +9,7 @@
   align-items: center;
 
   &::before {
-    background: var(--color-blue) url("../../../assets/registration.jpg");
+    background: var(--theme-primary-color-700) url("../../../assets/registration.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

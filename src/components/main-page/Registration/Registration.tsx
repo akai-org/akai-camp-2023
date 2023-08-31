@@ -17,7 +17,7 @@ const HackathonTimer = dynamic(
 
 export function Registration() {
   return (
-    <Section variant="blue" id="registration" className={styles.section}>
+    <Section variant="purple" id="registration" className={styles.section}>
       <Heading className={styles.heading} withAccent>
         AKAI Camp startuje za
       </Heading>
