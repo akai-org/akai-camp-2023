@@ -1,5 +1,6 @@
 import { facebook, github, linkedin, twitter } from "../Icon";
 import { Icon } from "components/ui";
+import { Badge } from "components/ui";
 import styles from "./Footer.module.scss";
 
 const socialIcons = [
@@ -31,32 +32,37 @@ export function Footer({}) {
       <div className={styles.innerContainer}>
         <div className={styles.row}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo.svg" alt="logo" className={styles.logo} />
-          <div className={styles.socialIcons}>
-            {socialIcons.map(({ url, icon, title }) => (
-              <a
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={url}
-                title={title}
-                className={styles.iconWrapper}
-              >
-                <Icon icon={icon} className={styles.icon} />
-              </a>
-            ))}
+          <img src="/images/AKAI_logo.svg" alt="logo" className={styles.logo} />
+          <div className={styles.socialContainer}>
+           <Badge color="secondary" className={styles.findUs} size="sm">Znajdź nas na: </Badge>
+            <div className={styles.socialIcons}>
+              {socialIcons.map(({ url, icon, title }) => (
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={url}
+                  title={title}
+                  className={styles.iconWrapper}
+                >
+                  <Icon icon={icon} className={styles.icon} />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
         <div className={styles.row}>
-          <div>
-            <p>
+          <ul>
+            <li >
               Kontakt:{" "}
-              <a href="mailto:kontakt@akai.org.pl">kontakt@akai.org.pl</a>
-            </p>
-            <a href="/statute_2022.pdf" className={styles.statuteText}>
+              <a className={styles.links} href="mailto:kontakt@akai.org.pl">kontakt@akai.org.pl</a>
+            </li>
+            <li>
+            <a href="/statute_2022.pdf" className={`${styles.statuteText} ${styles.links}`}>
               Status
             </a>
-          </div>
+            </li>
+          </ul>
           <p>&copy; 2023 AKAI</p>
         </div>
       </div>
