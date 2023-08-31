@@ -1,10 +1,13 @@
 .title {
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-l);
 }
 
-.subtitle {
-  margin-bottom: var(--space-xl);
-  text-transform: uppercase;
+.place, .address {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: solid .3em var(--color-text-primary);
+  animation: typewriter 3s steps(40) forwards, cursor-blink 0.3s 11 forwards;
 }
 
 .section {
@@ -16,6 +19,7 @@
   text-align: center;
 
   &::before {
+    // TODO: replace image
     background: var(--theme-primary-color-300) url("../../../assets/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,8 +38,17 @@
   display: none;
 
   .logo {
-    // TODO: why we have to set width of logo. Maybe is something wrong with original svg?
     width: 400px;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .badge{
+    transform: translate(120%, 30%) rotate(15deg);
+    margin: 0;
   }
 }
 
@@ -54,6 +67,8 @@
 
 .badge {
   margin-bottom: var(--space-xl);
+  opacity: 0;
+  animation: showup 2s 3.5s forwards;
 }
 
 .badgeDescription {
@@ -85,5 +100,32 @@
 
   .badgeDescription {
     min-width: 356px;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor-blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-text-primary);
+  }
+}
+
+@keyframes showup{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
