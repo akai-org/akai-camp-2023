@@ -11,7 +11,7 @@ type SectionConfig = {
 };
 const sections: readonly SectionConfig[] = [
   { key: "hero", url: "#hero", hidden: true },
-  { key: "akaiCode", name: "AKAI Camp", url: "#event-details" },
+  { key: "akaiCode", name: "AKAI Camp ’23", url: "#event-details" },
   { key: "registration", name: "Rejestracja", url: "#registration" },
   { key: "partners", name: "Partnerzy", url: "#partners" },
   { key: "faq", name: "FAQ", url: "#faq" },
@@ -21,8 +21,17 @@ export function Navigation() {
   const [activeSection, setActiveSection] = useState<string | undefined>(
     undefined,
   );
+  const [colorChange, setColorChange] = useState<boolean>(false);
 
   const checkboxRef = useRef<HTMLInputElement | null>(null);
+
+  const changeBackgroundColor = () => {
+    if (window.scrollY >= 80 && !colorChange) {
+      setColorChange(true);
+    } else if (window.scrollY < 80 && colorChange) {
+      setColorChange(false);
+    }
+  };
 
   function deselectNavigation() {
     if (checkboxRef?.current) {
@@ -31,6 +40,8 @@ export function Navigation() {
   }
 
   useEffect(() => {
+    window.addEventListener("scroll", changeBackgroundColor);
+
     const sections = document.querySelectorAll(".section");
     const sectionObserver = new IntersectionObserver(
       (entries) => {
@@ -61,11 +72,21 @@ export function Navigation() {
   }, []);
 
   return (
-    <nav className={classNames(styles.container)}>
+    <nav
+      className={classNames(
+        styles.container,
+        colorChange ? styles["container--dark"] : styles["container--light"],
+      )}
+    >
       <div className={styles.innerContainer}>
         <a href="#" className={styles.logoWrapper}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo.svg" alt="logo" className={styles.logo} />
+          <img
+            // src="/images/AkaiCamp_logo.svg"
+            src="/images/22.png"
+            alt="logo"
+            className={styles.logo}
+          />
         </a>
         <input
           ref={checkboxRef}

@@ -4,16 +4,33 @@
   width: 100%;
   height: var(--navbar-height);
   z-index: 100;
-  background: var(--color-white);
   box-shadow: 0 0 8px 2px rgb(0 0 0 / 0.33);
+  transition: 0.2s background ease-in-out;
+
+  &--light {
+    background: var(--color-white);
+
+    & .link {
+      color: var(--color-black);
+    }
+  }
+
+  &--dark {
+    background: var(--theme-primary-color-500);
+
+    & .link {
+      color: var(--color-white);
+    }
+  }
 }
 
 .innerContainer {
   display: flex;
   align-items: center;
-  justify-content: stretch;
+  justify-content: center;
   margin: auto;
-  padding: var(--navbar-padding-vertical) var(--navbar-padding-horizontal);
+  // padding: var(--navbar-padding-vertical) var(--navbar-padding-horizontal);
+  height: 100%;
   max-width: var(--section-max-width);
 }
 
@@ -56,20 +73,20 @@
 .link {
   box-sizing: border-box;
   text-decoration: none;
-  color: var(--color-black);
   font-size: var(--font-size-l);
   transition: 0.25s color ease-in-out, 0.25s border-color ease-in-out;
   padding-bottom: 4px;
   border-bottom: 1px solid transparent;
+  // transition: color 0.25s ease-in;
 
   &:hover,
   &.active {
-    color: var(--color-orange);
+    color: var(--color-text-strong);
   }
 
   &:hover {
     text-underline-offset: 8px;
-    border-color: var(--color-orange);
+    border-color: var(--color-text-strong);
   }
 }
 
@@ -85,7 +102,7 @@
 }
 
 %hamburgerTriggerBar {
-  background: var(--color-blue);
+  background: var(--color-black);
   position: relative;
   display: block;
   height: var(--navbar-hamburger-bar-height);
