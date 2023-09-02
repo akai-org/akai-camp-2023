@@ -4,7 +4,7 @@ import React from "react";
 
 export function Schedule() {
   return (
-    <Section id="schedule">
+    <Section id="schedule" variant="purple">
       <Heading withAccent>Tytuł</Heading>
 
       <Text size="m" className={styles.additionalInfo}>

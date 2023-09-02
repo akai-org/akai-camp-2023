@@ -32,7 +32,7 @@ export const FAQDisclosure = ({ FAQItem }: Props) => {
             <Disclosure.Panel
               className={classNames(styles.panel, { [styles.open]: open })}
             >
-              FAQ
+              {FAQItem.answer}
             </Disclosure.Panel>
           </Transition>
         </div>

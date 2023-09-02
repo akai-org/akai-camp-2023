@@ -23,7 +23,7 @@ export function Content() {
       <Registration />
       {/* <About /> */}
       <Location />
-      {/* <Schedule /> */}
+      <Schedule />
       {/* <Mentors /> */}
       <Partners />
       <FAQ />
