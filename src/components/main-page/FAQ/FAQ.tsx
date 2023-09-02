@@ -52,8 +52,7 @@ export const FAQ = () => {
         {
           question:
             "Mam inne pytanie, które nie jest zawarte w FAQ-u. Jak mogę się z Wami skontaktować?",
-          answer:
-            "Śmiało piszcie do nas na <a href='https://www.facebook.com/akai.pp'>Facebooku</a> lub na adres mailowy <a href='mailto:kontakt@akai.org.pl'>kontakt@akai.org.pl</a>",
+          answer: `Śmiało piszcie do nas na <a href="https://www.facebook.com/akai.pp" target="_blank" class="${styles.links}">Facebooku</a> lub na adres mailowy <a href="mailto:kontakt@akai.org.pl" class="${styles.links}">kontakt@akai.org.pl</a>`,
         },
       ],
     },

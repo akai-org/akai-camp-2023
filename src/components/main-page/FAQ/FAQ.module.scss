@@ -22,3 +22,12 @@
     gap: var(--space-l);
   }
 }
+
+.links {
+  transition: color 0.25s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-alternative-strong);
+  }
+}
