@@ -11,10 +11,10 @@ export function Category({ icon, title, text }: Props) {
   return (
     <div className={styles.container}>
       <Icon icon={icon} className={styles.icon} />
-      <Heading size="l" as="h4" className={styles.title}>
+      <Heading size="xl" as="h4" className={styles.title}>
         {title}
       </Heading>
-      <Text className={styles.text}>{text}</Text>
+      <Text size="m" className={styles.text}>{text}</Text>
     </div>
   );
 }
