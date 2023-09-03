@@ -9,8 +9,8 @@
   font-family: inherit;
   font-size: var(--font-size-m);
   padding: var(--space-s) var(--space-m);
-  background-color: var(--theme-primary-color-500);
-  color: var(--color-white);
+  background-color: var(--color-text-alternative-strong);
+  color: var(--color-black);
   border: none;
   border-radius: var(--border-radius-default);
   cursor: pointer;
@@ -18,7 +18,7 @@
 
 .chevron {
   height: var(--chevron-height);
-  fill: var(--color-white);
+  fill: var(--color-black);
   transform: rotate(0);
   transition: transform 0.5s ease-out;
 
@@ -28,8 +28,8 @@
 }
 
 .panel {
-  background-color: var(--theme-primary-color-300);
-  color: var(--color-white);
+  background-color: var(--color-text-primary);
+  color: var(--color-black);
   padding: var(--space-m);
   border-radius: 0 0 var(--border-radius-default) var(--border-radius-default);
   padding-top: var(--space-m);

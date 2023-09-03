@@ -10,6 +10,10 @@
   & + & {
     margin-top: var(--space-m);
   }
+
+  & strong {
+    color: var(--color-text-alternative-strong)
+  }
 }
 
 .section {
@@ -17,8 +21,9 @@
 }
 
 .subtitle {
-  font-weight: 400;
   margin: var(--space-xl) auto var(--space-l);
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 .categoriesContainer {
@@ -27,6 +32,7 @@
   gap: var(--space-l);
   justify-content: center;
   align-items: stretch;
+  margin-top: var(--space-2xl);
 }
 
 // tablet

@@ -26,6 +26,8 @@
 .imageContainer {
   display: flex;
   justify-content: center;
+  //TODO: margin
+  margin-bottom: -64px;
 
   .stayTuned {
     width: 75%;

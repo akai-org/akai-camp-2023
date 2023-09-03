@@ -59,7 +59,7 @@ export const FAQ = () => {
   ];
 
   return (
-    <Section id="faq" variant="purple">
+    <Section id="faq" variant="purple" className={styles.container}>
       <Heading className={styles.heading} withAccent>
         FAQ
       </Heading>
