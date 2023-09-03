@@ -1,4 +1,5 @@
 import { Disclosure, Transition } from "@headlessui/react";
+import parse from "html-react-parser";
 import classNames from "classnames";
 import { Icon } from "components/ui";
 import styles from "./FAQDisclosure.module.scss";
@@ -32,7 +33,7 @@ export const FAQDisclosure = ({ FAQItem }: Props) => {
             <Disclosure.Panel
               className={classNames(styles.panel, { [styles.open]: open })}
             >
-              FAQ
+              {parse(FAQItem.answer)}
             </Disclosure.Panel>
           </Transition>
         </div>

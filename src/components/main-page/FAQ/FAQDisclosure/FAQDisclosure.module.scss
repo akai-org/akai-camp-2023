@@ -9,7 +9,7 @@
   font-family: inherit;
   font-size: var(--font-size-m);
   padding: var(--space-s) var(--space-m);
-  background-color: var(--color-blue-light);
+  background-color: var(--theme-primary-color-500);
   color: var(--color-white);
   border: none;
   border-radius: var(--border-radius-default);
@@ -28,8 +28,8 @@
 }
 
 .panel {
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: var(--theme-primary-color-300);
+  color: var(--color-white);
   padding: var(--space-m);
   border-radius: 0 0 var(--border-radius-default) var(--border-radius-default);
   padding-top: var(--space-m);
