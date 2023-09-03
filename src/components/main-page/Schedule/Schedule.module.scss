@@ -22,3 +22,14 @@
     margin: var(--space-2xl) 0 var(--space-xl);
   }
 }
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  //TODO: margin
+  margin-bottom: -64px;
+
+  .stayTuned {
+    width: 75%;
+  }
+}

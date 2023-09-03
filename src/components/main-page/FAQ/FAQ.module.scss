@@ -1,3 +1,7 @@
+.container::before {
+  opacity: 1;
+}
+
 .heading {
   margin-bottom: var(--space-2xl);
 }
@@ -20,5 +24,14 @@
 @media (min-width: 1024px) {
   .questionsContainer {
     gap: var(--space-l);
+  }
+}
+
+.links {
+  transition: color 0.25s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: var(--theme-primary-color-500);
   }
 }

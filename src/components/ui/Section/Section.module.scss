@@ -12,8 +12,8 @@
 }
 
 .white {
-  background: var(--color-white);
-  color: var(--color-black);
+  background: var(--theme-primary-color-700);
+  color: var(--color-white);
 }
 
 .purple {
@@ -23,7 +23,8 @@
   &::before {
     @extend %wrapperBackground;
 
-    background: var(--theme-primary-color-500) url("../../../assets/circle-pattern.svg");
+    background: var(--theme-primary-color-500) url("../../../assets/background.svg");
+    fill: var(--color-white);
     background-repeat: repeat-y;
     background-position: 50% 0;
     opacity: 0.1;
