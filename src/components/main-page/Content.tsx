@@ -9,6 +9,7 @@ import {
   FAQ,
   Mentors,
   Schedule,
+  SchedulePlaceholder
 } from ".";
 
 export function Content() {
@@ -23,6 +24,7 @@ export function Content() {
       <Registration />
       {/* <About /> */}
       <Location />
+      <SchedulePlaceholder />
       {/* <Schedule /> */}
       {/* <Mentors /> */}
       <Partners />

@@ -22,3 +22,12 @@
     margin: var(--space-2xl) 0 var(--space-xl);
   }
 }
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+
+  .stayTuned {
+    width: 75%;
+  }
+}
