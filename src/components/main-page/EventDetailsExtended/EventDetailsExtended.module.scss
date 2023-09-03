@@ -3,7 +3,7 @@
 }
 
 .text {
-  text-align: center;
+  text-align: justify;
   max-width: 860px;
   margin: auto;
 
@@ -25,7 +25,8 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-l);
-  align-items: center;
+  justify-content: center;
+  align-items: stretch;
 }
 
 // tablet
