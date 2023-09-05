@@ -14,7 +14,9 @@ export function Category({ icon, title, text }: Props) {
       <Heading size="xl" as="h4" className={styles.title}>
         {title}
       </Heading>
-      <Text size="m" className={styles.text}>{text}</Text>
+      <Text size="m" className={styles.text}>
+        {text}
+      </Text>
     </div>
   );
 }

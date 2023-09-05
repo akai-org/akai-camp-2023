@@ -25,6 +25,10 @@
     margin-top: var(--space-m);
   }
 
+  & li {
+    list-style: none;
+  }
+
   .statuteText {
     display: block;
   }

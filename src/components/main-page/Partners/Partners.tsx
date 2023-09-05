@@ -14,7 +14,24 @@ interface Partners {
 
 const Partners = () => {
   const partners = [
-    { name: "AKAI", companies: [{ name: "info", logo: "_blank" }] },
+    {
+      name: "Wspierają nas",
+      companies: [
+        { name: "MUG", logo: "_blank" },
+        { name: "All for one", logo: "_blank" },
+      ],
+    },
+    {
+      name: "Partnerzy medialni",
+      companies: [{ name: "Radio afera", logo: "_blank" }],
+    },
+    {
+      name: "Przy współpracy",
+      companies: [
+        { name: "Politechnika Poznańska", logo: "_blank" },
+        { name: "WIiT", logo: "_blank" },
+      ],
+    },
   ] as Partners[];
 
   return (
