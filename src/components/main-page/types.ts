@@ -8,3 +8,9 @@ export type Section =
   | "about"
   | "partners"
   | "faq";
+
+export type Timeline = {
+  title: string,
+  place: string,
+  hour: string
+}

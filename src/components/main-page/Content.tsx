@@ -11,6 +11,7 @@ import {
   Schedule,
   SchedulePlaceholder
 } from ".";
+import { ScheduleTimeline } from "./Schedule/ScheduleTimeline";
 
 export function Content() {
   return (
@@ -24,7 +25,8 @@ export function Content() {
       <Registration />
       {/* <About /> */}
       <Location />
-      <SchedulePlaceholder />
+      <ScheduleTimeline/>
+      {/* <SchedulePlaceholder /> */}
       {/* <Schedule /> */}
       {/* <Mentors /> */}
       <Partners />
