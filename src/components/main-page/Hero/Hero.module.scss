@@ -19,8 +19,7 @@
   text-align: center;
 
   &::before {
-    // TODO: replace image
-    background: var(--theme-primary-color-300) url("../../../assets/hero.jpg");
+    background: var(--theme-primary-color-300) url("../../../assets/herobanner-intro.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

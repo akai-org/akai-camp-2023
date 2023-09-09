@@ -9,10 +9,10 @@
   align-items: center;
 
   &::before {
-    background: var(--theme-primary-color-700) url("../../../assets/registration.jpg");
+    background: var(--theme-primary-color-700) url("../../../assets/herobanner-join-us.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
   }
 }
 
