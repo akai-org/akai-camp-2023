@@ -31,7 +31,11 @@ export function Navigation() {
       <div className={styles.innerContainer}>
         <a href="#" className={styles.logoWrapper}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="images/AKAI_logo.svg" alt="logo" className={styles.logo} />
+          <img
+            src="images/AKAI_logo.svg"
+            alt="AKAI Logo"
+            className={styles.logo}
+          />
         </a>
         <input
           ref={checkboxRef}

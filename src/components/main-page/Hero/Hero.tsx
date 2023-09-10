@@ -9,12 +9,12 @@ export function Hero() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="images/AkaiCamp_logo.svg"
-            alt="logo"
+            alt="AKAI Camp Logo"
             className={styles.logo}
           />
         </div>
         <div className={styles.description}>
-          <Heading size="3xl" className={styles.title} withAccent>
+          <Heading size="3xl" as="h1" className={styles.title} withAccent>
             AKAI Camp
           </Heading>
           <Badge color="secondary" className={styles.badge}>

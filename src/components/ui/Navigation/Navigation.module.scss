@@ -124,7 +124,7 @@
 .hamburgerTrigger {
   cursor: pointer;
   margin: auto 0 auto auto;
-  padding: 20px 8px;
+  // padding: 20px 8px;
 
   span {
     @extend %hamburgerTriggerBar;
