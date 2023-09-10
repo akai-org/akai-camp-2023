@@ -63,7 +63,7 @@ export function Footer({}) {
             </li>
             <li>
               <a
-                href="/statute_2022.pdf"
+                href="/statute.pdf"
                 className={`${styles.statuteText} ${styles.links}`}
               >
                 Regulamin wydarzenia
