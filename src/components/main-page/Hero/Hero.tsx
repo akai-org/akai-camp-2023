@@ -8,7 +8,7 @@ export function Hero() {
         <div className={styles.logoWrapper}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/AkaiCamp_logo.svg"
+            src="images/AkaiCamp_logo.svg"
             alt="logo"
             className={styles.logo}
           />
