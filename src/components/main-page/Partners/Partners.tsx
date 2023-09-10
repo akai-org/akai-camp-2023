@@ -68,7 +68,13 @@ const Partners = () => {
               <div className={styles.partnersIconsWrapper}>
                 {companies.map(({ name, logo, url }) => {
                   return (
-                    <a className={styles.partnerIconLink} href={url} key={name}>
+                    <a
+                      className={styles.partnerIconLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={url}
+                      key={name}
+                    >
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         alt={`${name} logo`}
