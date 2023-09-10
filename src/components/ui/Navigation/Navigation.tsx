@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import classNames from "classnames";
 import { Section } from "components/main-page/types";
 import styles from "./Navigation.module.scss";
@@ -11,17 +11,13 @@ type SectionConfig = {
 };
 const sections: readonly SectionConfig[] = [
   { key: "hero", url: "#hero", hidden: true },
-  { key: "akaiCode", name: "AKAI Camp", url: "#event-details" },
+  { key: "akaiCode", name: "AKAI Camp ’23", url: "#event-details" },
   { key: "registration", name: "Rejestracja", url: "#registration" },
   { key: "partners", name: "Partnerzy", url: "#partners" },
   { key: "faq", name: "FAQ", url: "#faq" },
 ] as const;
 
 export function Navigation() {
-  const [activeSection, setActiveSection] = useState<string | undefined>(
-    undefined,
-  );
-
   const checkboxRef = useRef<HTMLInputElement | null>(null);
 
   function deselectNavigation() {
@@ -30,42 +26,12 @@ export function Navigation() {
     }
   }
 
-  useEffect(() => {
-    const sections = document.querySelectorAll(".section");
-    const sectionObserver = new IntersectionObserver(
-      (entries) => {
-        // intersection observer is triggered initially on load with all registered sections
-        // - preventing from evaluating the section to highlight for that case
-        if (entries.length === sections.length) {
-          return;
-        }
-
-        entries.forEach((entry) => {
-          const { id } = entry.target;
-
-          setActiveSection(id);
-        });
-      },
-      // TODO: it may require to fine-tune the threshold for mobile breakpoints
-      // in which some sections are larger, hence threhold needs to be lowered
-      {
-        threshold: 0.35,
-        rootMargin: "-25% 0px -25%",
-      },
-    );
-    sections.forEach((section) => sectionObserver.observe(section));
-
-    return () => {
-      sections.forEach((section) => sectionObserver.unobserve(section));
-    };
-  }, []);
-
   return (
     <nav className={classNames(styles.container)}>
       <div className={styles.innerContainer}>
         <a href="#" className={styles.logoWrapper}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo.svg" alt="logo" className={styles.logo} />
+          <img src="/images/Akai_logo.svg" alt="logo" className={styles.logo} />
         </a>
         <input
           ref={checkboxRef}
@@ -81,9 +47,7 @@ export function Navigation() {
                 <li key={url}>
                   <a
                     href={url}
-                    className={classNames(styles.link, {
-                      [styles.active]: url === `#${activeSection}`,
-                    })}
+                    className={styles.link}
                     onClick={deselectNavigation}
                   >
                     {name}

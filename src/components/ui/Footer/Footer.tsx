@@ -34,7 +34,9 @@ export function Footer({}) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/AKAI_logo.svg" alt="logo" className={styles.logo} />
           <div className={styles.socialContainer}>
-           <Badge color="secondary" className={styles.findUs} size="sm">Znajdź nas na: </Badge>
+            <Badge color="secondary" className={styles.findUs} size="sm">
+              Znajdź nas na:{" "}
+            </Badge>
             <div className={styles.socialIcons}>
               {socialIcons.map(({ url, icon, title }) => (
                 <a
@@ -53,14 +55,19 @@ export function Footer({}) {
         </div>
         <div className={styles.row}>
           <ul>
-            <li >
+            <li>
               Kontakt:{" "}
-              <a className={styles.links} href="mailto:kontakt@akai.org.pl">kontakt@akai.org.pl</a>
+              <a className={styles.links} href="mailto:kontakt@akai.org.pl">
+                kontakt@akai.org.pl
+              </a>
             </li>
             <li>
-            <a href="/statute_2022.pdf" className={`${styles.statuteText} ${styles.links}`}>
-              Status
-            </a>
+              <a
+                href="/statute_2022.pdf"
+                className={`${styles.statuteText} ${styles.links}`}
+              >
+                Regulamin wydarzenia
+              </a>
             </li>
           </ul>
           <p>&copy; 2023 AKAI</p>

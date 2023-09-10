@@ -23,6 +23,11 @@
   }
 }
 
+.container::before {
+  opacity: 1;
+  background-repeat: repeat-x;
+}
+
 .imageContainer {
   display: flex;
   justify-content: center;

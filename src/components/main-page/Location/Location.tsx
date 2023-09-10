@@ -15,7 +15,7 @@ const LocationMap = dynamic(
 
 export function Location() {
   return (
-    <Section variant="blue" id="location" className={styles.section}>
+    <Section variant="purple" id="location" className={styles.section}>
       <Heading className={styles.sectionHeading} withAccent>
         Lokalizacja
       </Heading>
@@ -27,23 +27,23 @@ export function Location() {
               <Icon className={styles.icon} icon={mapMarker} />
             </div>
             <div className={styles.headingWrapper}>
-              <p className={styles.bold}>Lokalizacja 1</p>
-              <p className={styles.bold}>Lokalizacja 2</p>
-              <p>Lokalizacja 3</p>
+              <p className={styles.bold}>Centrum&nbsp;Wykładowe</p>
+              <p className={styles.bold}>Politechniki&nbsp;Poznańskiej</p>
+              <p>Kampus Piotrowo,&nbsp;Poznań</p>
             </div>
           </div>
           <div className={styles.textWrapper}>
             <p className={styles.text}>
               <Icon icon={bus} className={styles.busIcon} />
-              Opis 1
+              Przystanek Politechnika: 13
             </p>
             <p className={styles.text}>
               <Icon icon={bus} className={styles.busIcon} />
-              Opis 2
+              Przystanek Kórnicka: 6, 7, 8, 13, 17
             </p>
             <p className={styles.text}>
               <Icon icon={bus} className={styles.busIcon} />
-              Opis 3
+              Przystanek Baraniaka: 6, 7, 8, 17
             </p>
           </div>
         </div>

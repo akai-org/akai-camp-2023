@@ -4,16 +4,24 @@
   width: 100%;
   height: var(--navbar-height);
   z-index: 100;
-  background: var(--color-white);
   box-shadow: 0 0 8px 2px rgb(0 0 0 / 0.33);
+  transition: 0.2s background ease-in-out;
+  background: var(--theme-primary-color-500);
+  color: var(--color-white);
+  padding: var(--space-l);
+
+  //TODO powiększyć czcionkę
+  //TODO default ciemny niebieski
+  //TODO
 }
 
 .innerContainer {
   display: flex;
   align-items: center;
-  justify-content: stretch;
+  justify-content: center;
   margin: auto;
-  padding: var(--navbar-padding-vertical) var(--navbar-padding-horizontal);
+  // padding: var(--navbar-padding-vertical) var(--navbar-padding-horizontal);
+  height: 100%;
   max-width: var(--section-max-width);
 }
 
@@ -33,7 +41,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: var(--color-white);
+  // background: var(--color-white);
+  background: var(--color-text-alternative-strong);
   transform-origin: top;
   transform: scaleY(0);
   transition: transform ease-in-out 0.25s;
@@ -56,20 +65,33 @@
 .link {
   box-sizing: border-box;
   text-decoration: none;
-  color: var(--color-black);
   font-size: var(--font-size-l);
   transition: 0.25s color ease-in-out, 0.25s border-color ease-in-out;
   padding-bottom: 4px;
   border-bottom: 1px solid transparent;
+  position: relative;
 
   &:hover,
   &.active {
-    color: var(--color-orange);
+    color: var(--color-text-strong);
   }
 
   &:hover {
     text-underline-offset: 8px;
-    border-color: var(--color-orange);
+    border-color: var(--color-text-strong);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: -8px;
+      right: -8px;
+      z-index: -1;
+      border-radius: 4px;
+      background-color: var(--color-white);
+    }
   }
 }
 
@@ -85,7 +107,7 @@
 }
 
 %hamburgerTriggerBar {
-  background: var(--color-blue);
+  background: var(--color-white);
   position: relative;
   display: block;
   height: var(--navbar-hamburger-bar-height);
@@ -130,6 +152,12 @@
     & .links {
       opacity: 1;
       transition: opacity 0.25s ease-in-out 0.25s;
+    }
+
+    & .link:hover,
+    & .link:active {
+      color: var(--theme-primary-color-500);
+      border-color: var(--theme-primary-color-500);
     }
   }
 
@@ -181,7 +209,7 @@
   }
 
   .link {
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-m);
   }
 
   .separator {
