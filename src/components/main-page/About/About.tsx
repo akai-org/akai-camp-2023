@@ -34,7 +34,7 @@ export function About() {
         <div className={styles.pictureWrapper}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/coordinators.jpg"
+            src="images/coordinators.jpg"
             alt="coordinators"
             className={styles.picture}
           />

@@ -11,7 +11,7 @@ type CardType = {
 };
 
 export function Card({
-  image = "/images/person.png",
+  image = "images/person.png",
   name,
   company,
   role,

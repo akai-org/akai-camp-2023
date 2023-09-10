@@ -72,7 +72,7 @@ const Partners = () => {
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         alt={`${name} logo`}
-                        src={`/images/partners/${logo}`}
+                        src={`images/partners/${logo}`}
                         className={styles.partnerIcon}
                       />
                     </a>
