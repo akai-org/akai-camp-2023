@@ -27,9 +27,9 @@ export function Location() {
               <Icon className={styles.icon} icon={mapMarker} />
             </div>
             <div className={styles.headingWrapper}>
-              <p className={styles.bold}>Centrum Wykładowe</p>
-              <p className={styles.bold}>Politechniki Poznańskiej</p>
-              <p>Kampus Piotrowo, Poznań</p>
+              <p className={styles.bold}>Centrum&nbsp;Wykładowe</p>
+              <p className={styles.bold}>Politechniki&nbsp;Poznańskiej</p>
+              <p>Kampus Piotrowo,&nbsp;Poznań</p>
             </div>
           </div>
           <div className={styles.textWrapper}>

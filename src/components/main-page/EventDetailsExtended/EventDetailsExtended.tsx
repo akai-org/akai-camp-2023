@@ -11,11 +11,11 @@ export function EventDetailsExtended() {
       </Heading>
       <Text size="m" className={styles.text}>
         Pierwsza edycja konferencji <strong>AKAI&nbsp;Camp</strong>{" "}
-        organizowanej przez AKAI -
-        Akademickie&nbsp;Koło&nbsp;Aplikacji&nbsp;Internetowych - odbędzie się
-        na <strong>Politechnice Poznańskiej</strong>. Ta inicjatywa jest
-        kolejnym rozdziałem inspirującej podróży, którą rozpoczęliśmy podczas
-        Hackathonu AKAI Code. Tym razem skupiamy się wokół tematyki{" "}
+        organizowanej przez AKAI&nbsp;- Akademickie&nbsp;Koło
+        Aplikacji&nbsp;Internetowych - odbędzie się na{" "}
+        <strong>Politechnice Poznańskiej</strong>. Ta inicjatywa jest kolejnym
+        rozdziałem inspirującej podróży, którą rozpoczęliśmy podczas Hackathonu
+        AKAI Code. Tym razem skupiamy się wokół tematyki{" "}
         <strong>Rozwoju Kariery</strong>.
       </Text>
 
@@ -26,8 +26,8 @@ export function EventDetailsExtended() {
       <Text size="m" className={styles.text}>
         AKAI Camp wychodzi naprzeciw rosnącym oczekiwaniom osób, które chcą
         doskonalić swoje umiejętności oraz zbudować solidne podstawy pod
-        przyszłą karierę w branży IT. Podczas konferencji, uczestnicy będą mieli
-        okazję wziąć udział w{" "}
+        przyszłą karierę w branży IT. Podczas konferencji będziesz miał okazję
+        wziąć udział w{" "}
         <strong>
           prelekcjach prowadzonych przez doświadczonych ekspertów branżowych
         </strong>

@@ -68,6 +68,8 @@
   --partner-icon-max-width: 196px;
   --partner-icon-height: 96px;
   --partner-icon-hover-scale: 1.125;
+  --partner-icon-box-width: 250px;
+  --partner-icon-box-height: 125px;
 }
 
 @media (max-width: 1024px) {
@@ -86,11 +88,16 @@
   }
 }
 
+@media (max-width: 760px) {
+  :root {
+    --section-spacing-horizontal: 32px;
+  }
+}
+
 @media (max-width: 480px) {
   :root {
     /* ----- section ----- */
     --section-spacing-vertical: 48px;
-    --section-spacing-horizontal: 32px;
 
     /* ----- title ----- */
     --title-spacing: var(--font-size-l);
