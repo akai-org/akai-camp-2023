@@ -4,7 +4,13 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head></Head>
+        <Head>
+          <meta
+            name="description"
+            content="Strona konferencji AKAI Camp 2023"
+            key="desc"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
