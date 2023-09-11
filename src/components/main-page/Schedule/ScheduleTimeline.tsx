@@ -1,7 +1,9 @@
 import { Section, Heading } from "components/ui";
 import React from "react";
-import styles from './Schedule.module.scss'
+import styles from './Schedule.timeline.module.scss'
 import { Timeline } from "../types";
+import TimelineNote from "./TimelineNote";
+import ScheduleTimelineTopics from "./ScheduleTimelineTopics";
 
 const timelineNotes: Timeline[] = [
     {
@@ -12,7 +14,18 @@ const timelineNotes: Timeline[] = [
     {
         title: "Otwarcie wydarzenia",
         hour: "10:00",
-        place: "Sala CW1"
+        place: "Sala CW1",
+        topics: [
+            {
+                title: "xyz",
+                abstract: "abstract xyz",
+                lectuer: {
+                    avatar: 'path to avatar',
+                    nameAndSurname: "prof. dr hab. inż. Mikołaj Morzy",
+                    biography: "bio About Morzy"
+                }
+            }
+        ]
     },
     {
         title: "Pierwsza sesja prelekcji",
@@ -55,8 +68,16 @@ export function ScheduleTimeline(){
         }>
             <Heading withAccent>Plan wydarzenia</Heading>
             <ul className="timeline">
-                {timelineNotes.map((timeline: Timeline)=>
-                    <li className={styles.timeline__point}></li>
+                {timelineNotes.map(({title, hour, place, topics }: Timeline)=>
+                    <li key={title} className={styles.timeline__point}>
+                        {
+                            topics ?
+                        <TimelineNote hour={hour} title={title} place={place}>
+                            <ScheduleTimelineTopics topics={topics} />
+                        </TimelineNote>
+                        : <TimelineNote hour={hour} title={title} place={place} />
+                        }
+                    </li>
                 )}
             </ul>
         </Section>
