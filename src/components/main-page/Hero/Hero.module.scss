@@ -21,7 +21,8 @@
   text-align: center;
 
   &::before {
-    background: var(--theme-primary-color-300) url("../../../assets/herobanner-intro.jpeg");
+    background: var(--theme-primary-color-300)
+      url("../../../assets/herobanner-intro.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -137,5 +138,16 @@
 
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .date {
+    font-size: var(--font-size-xl);
+  }
+
+  .place,
+  .address {
+    font-size: var(--font-size-l);
   }
 }

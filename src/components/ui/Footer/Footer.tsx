@@ -32,7 +32,11 @@ export function Footer({}) {
       <div className={styles.innerContainer}>
         <div className={styles.row}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="images/AKAI_logo.svg" alt="logo" className={styles.logo} />
+          <img
+            src="images/AKAI_logo.svg"
+            alt="AKAI logo"
+            className={styles.logo}
+          />
           <div className={styles.socialContainer}>
             <Badge color="secondary" className={styles.findUs} size="sm">
               Znajdź nas na:{" "}

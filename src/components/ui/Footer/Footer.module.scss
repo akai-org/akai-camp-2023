@@ -20,6 +20,7 @@
   gap: var(--space-m);
   color: var(--color-text-alternative);
   font-size: var(--font-size-m);
+  align-items: center;
 
   & + & {
     margin-top: var(--space-m);

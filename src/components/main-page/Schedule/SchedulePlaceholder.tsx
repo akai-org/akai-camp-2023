@@ -17,7 +17,7 @@ export function SchedulePlaceholder() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="images/teaching_cats.png"
-          alt="Stay tuned image"
+          alt="Wait for more information"
           className={styles.stayTuned}
         />
       </div>

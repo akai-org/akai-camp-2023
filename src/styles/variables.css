@@ -97,7 +97,8 @@
 @media (max-width: 480px) {
   :root {
     /* ----- section ----- */
-    --section-spacing-vertical: 48px;
+    --section-spacing-vertical: 36px;
+    --section-spacing-horizontal: 24px;
 
     /* ----- title ----- */
     --title-spacing: var(--font-size-l);
