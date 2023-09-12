@@ -22,17 +22,17 @@ export function Hero() {
           </Badge>
           <div>
             <Text size="2xl" className={styles.date}>
-              21 październik
+              21 października
             </Text>
           </div>
           <div>
             <Text className={styles.place} size="xl">
-              Centrum wykładowe PUT
+              Centrum Wykładowe
             </Text>
           </div>
           <div>
             <Text className={styles.address} size="xl">
-              Kampus Piotrowo
+              Politechniki Poznańskiej
             </Text>
           </div>
         </div>
