@@ -98,7 +98,7 @@
   :root {
     /* ----- section ----- */
     --section-spacing-vertical: 36px;
-    --section-spacing-horizontal: 24px;
+    --section-spacing-horizontal: 20px;
 
     /* ----- title ----- */
     --title-spacing: var(--font-size-l);
