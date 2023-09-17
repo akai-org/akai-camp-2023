@@ -10,45 +10,32 @@ export function EventDetailsExtended() {
         AKAI Camp 2023
       </Heading>
       <Text size="m" className={styles.text}>
-        Z ogromną radością prezentujemy pierwszą edycję konferencji{" "}
-        <strong>AKAI&nbsp;Camp</strong>&nbsp;-&nbsp;kolejny rozdział w
-        inspirującej podróży, którą rozpoczęliśmy podczas Hackathonu AKAI Code.
-        Tym razem skupiamy się wokół tematyki <strong>Rozwoju Kariery</strong>,
-        tworząc wyjątkowe wydarzenie dla wszystkich tych, którzy pragną podnieść
-        wartość swojego CV oraz poszerzyć horyzonty zawodowe. Impreza odbędzie
-        się na <strong>Politechnice Poznańskiej</strong>.
+        Pierwsza edycja konferencji <strong>AKAI&nbsp;Camp</strong>{" "}
+        organizowanej przez AKAI&nbsp;- Akademickie&nbsp;Koło
+        Aplikacji&nbsp;Internetowych - odbędzie się na{" "}
+        <strong>Politechnice Poznańskiej</strong>. Ta inicjatywa jest kolejnym
+        rozdziałem inspirującej podróży, którą rozpoczęliśmy podczas Hackathonu
+        AKAI Code. Tym razem skupiamy się wokół tematyki{" "}
+        <strong>Rozwoju Kariery</strong>.
       </Text>
+
+      {
+        //TODO: Czy tekst nie powinien być kierowany do jednej osoby?
+      }
+
       <Text size="m" className={styles.text}>
-        AKAI Camp wychodzi naprzeciw rosnącym oczekiwaniom osób pragnących
+        AKAI Camp wychodzi naprzeciw rosnącym oczekiwaniom osób, które chcą
         doskonalić swoje umiejętności oraz zbudować solidne podstawy pod
-        przyszłą karierę. Nasza konferencja ma być{" "}
-        <strong>mostem łączącym uczestników i firmy partnerskie</strong> poprzez
-        inspirujące rozmowy, czy możliwość nawiązania cennych kontaktów.
-      </Text>
-      <Text size="m" className={styles.text}>
-        Podczas konferencji, uczestnicy będą mieli okazję uczestniczyć w{" "}
+        przyszłą karierę w branży IT. Podczas konferencji będziesz miał okazję
+        wziąć udział w{" "}
         <strong>
           prelekcjach prowadzonych przez doświadczonych ekspertów branżowych
         </strong>
-        . Poruszane tematy obejmują różnorodne aspekty kształtowania kariery i
-        samorozwoju.
-      </Text>
-
-      <Text size="m" className={styles.text}>
-        AKAI Camp to także doskonała okazja do nawiązania relacji z
-        przedstawicielami firm partnerskich. Będziesz miał możliwość zadawania
-        pytań, dowiedzenia się więcej o ich oczekiwaniach wobec potencjalnych
-        pracowników oraz poznania aktualnych trendów w branży. To wszystko
-        sprawia, że AKAI Camp to nie tylko miejsce edukacji, ale także
-        inspiracji i <strong>networkingu</strong>!
-      </Text>
-
-      <Text size="m" className={styles.text}>
-        Nie możemy się doczekać, aby Cię przywitać na AKAI Camp i razem
-        eksplorować możliwości poszerzania naszych ścieżek zawodowych, czerpiąc
-        z bogactwa wiedzy i doświadczenia naszych wyjątkowych prelegentów oraz
-        partnerów. Zapisy ruszają wkrótce, więc obserwuj nasze social media i
-        stań się częścią tej wyjątkowej przygody!
+        . Jest to również dobra szansa na zdobycie wiedzy o aktualnych trendach
+        w branży, czy też do <strong>nawiązywania kontaktów</strong> z
+        przedstawicielami firm partnerskich. To wszystko sprawia, że AKAI Camp
+        to nie tylko miejsce edukacji, ale także inspiracji i{" "}
+        <strong>networkingu</strong>!
       </Text>
 
       <Heading size="xl" as="h3" className={styles.subtitle}>
@@ -75,30 +62,17 @@ export function EventDetailsExtended() {
           icon={cog}
           title={"Meet my career"}
           text={
-            "Ten panel skupi się na kluczowych umiejętnościach niezbędnych do osiągnięcia zawodowych celów. Przedstawione zostaną ważne błędy, których warto unikać, by osiągnąć sukces jako aspirujący profesjonalista. Czeka na Was też wartościowa analiza różnych ścieżek zawodowych, podczas której zaprezentowane zostaną ich zalety i wyzwania. Będziemy omawiać, na co szczególnie zwracać uwagę, aby zdobyć przewagę na dynamicznym rynku pracy."
+            "Tutaj dowiesz się o kluczowych umiejętnościach niezbędnych do osiągnięcia zawodowych celów, a także o błędach, których warto unikać. Ten panel dostarczy wartościową analizę różnych ścieżek zawodowych, podczas której zaprezentowane zostaną ich zalety i wyzwania."
           }
         />
         <Category
           icon={lightBulb}
           title={"How to self improve"}
           text={
-            "Ten panel dostarczy inspirujących wskazówek dotyczących podniesienia atrakcyjności Waszego CV. Eksperci podzielą się informacjami na temat tego, na co rekruterzy kładą nacisk i jak można stać się bardziej wartościowym pracownikiem na rynku. Przedstawimy także skarbnicę praktycznych trików, które pomogą Ci wyróżnić się na tle konkurencji i rozwijać swoje umiejętności zawodowe."
+            "W tym segmencie omawiane będą wskazówki dotyczące podniesiania atrakcyjności CV oraz informacje na temat tego, na co rekruterzy kładą nacisk podczas rekrutacji. To właśnie tutaj prelegenci przedstawią skarbnicę praktycznych trików, które pomogą wyróżnić się na tle konkurencji i rozwinąć umiejętności zawodowe."
           }
         />
       </div>
-
-      <Heading size="xl" as="h3" className={styles.subtitle}>
-        Networking i konkursy
-      </Heading>
-
-      <Text size="m" className={styles.text}>
-        Podczas wydarzenia dostępne będą <strong>stanowiska firm</strong>,
-        stanowiące doskonałą okazję do nawiązania kontaktów, rozmów i zdobycia
-        wartościowych wskazówek. To miejsce, gdzie z łatwością można podejść,
-        porozmawiać i wzbogacić swoją sieć zawodową. Firmy przygotują również
-        różnego rodzaju <strong>konkursy</strong>, dodając dodatkową dawkę
-        emocji i szansę na atrakcyjne nagrody.
-      </Text>
     </Section>
   );
 }

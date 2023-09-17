@@ -20,4 +20,5 @@ export {
   mdiProjectorScreen as screen,
   mdiSendLock as sendLock,
   mdiPartyPopper as party,
+  mdiHelp as questionMark,
 } from "@mdi/js";

@@ -4,4 +4,8 @@
   border-radius: var(--border-radius-default);
   max-width: 465px;
   z-index: 0;
+
+  @media (max-width: 480px) {
+    height: 200px;
+  }
 }

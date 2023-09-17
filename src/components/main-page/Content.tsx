@@ -3,13 +3,12 @@ import {
   Hero,
   EventDetailsExtended,
   Registration,
-  About,
+  // About,
   Location,
   Partners,
   FAQ,
-  Mentors,
-  Schedule,
-  SchedulePlaceholder
+  // Schedule,
+  SchedulePlaceholder,
 } from ".";
 import { ScheduleTimeline } from "./Schedule/ScheduleTimeline";
 

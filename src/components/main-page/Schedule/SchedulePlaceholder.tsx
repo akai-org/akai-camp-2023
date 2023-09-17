@@ -4,7 +4,7 @@ import React from "react";
 
 export function SchedulePlaceholder() {
   return (
-    <Section id="schedule" className={styles.container}>
+    <Section variant="purple" id="schedule" className={styles.container}>
       <Heading withAccent>Plan wydarzenia</Heading>
 
       <Text size="m" className={styles.additionalInfo}>
@@ -16,8 +16,8 @@ export function SchedulePlaceholder() {
       <div className={styles.imageContainer}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/18.png"
-          alt="Stay tuned image"
+          src="images/teaching_cats.png"
+          alt="Wait for more information"
           className={styles.stayTuned}
         />
       </div>

@@ -12,8 +12,8 @@ type Props = {
 
 export function Badge({ children, color = "primary", className }: Props) {
   return (
-    <p className={classNames(styles.badge, styles[color], className)}>
+    <h3 className={classNames(styles.badge, styles[color], className)}>
       {children}
-    </p>
+    </h3>
   );
 }

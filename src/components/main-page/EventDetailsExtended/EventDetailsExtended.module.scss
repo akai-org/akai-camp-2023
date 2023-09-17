@@ -12,7 +12,7 @@
   }
 
   & strong {
-    color: var(--color-text-alternative-strong)
+    color: var(--color-text-alternative-strong);
   }
 }
 
@@ -31,7 +31,7 @@
   flex-direction: column;
   gap: var(--space-l);
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   margin-top: var(--space-2xl);
 }
 

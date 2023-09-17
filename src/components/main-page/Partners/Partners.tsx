@@ -1,10 +1,12 @@
-import { Badge, Heading, Section } from "components/ui";
+import { Badge, Heading, Section, Icon } from "components/ui";
+import { questionMark } from "components/ui/Icon";
 import styles from "./Partners.module.scss";
 
 type CompanyInfo = {
   name: string;
   url?: string;
   logo: string;
+  isHidden?: boolean;
 };
 
 interface Partners {
@@ -14,7 +16,55 @@ interface Partners {
 
 const Partners = () => {
   const partners = [
-    { name: "AKAI", companies: [{ name: "info", logo: "_blank" }] },
+    {
+      name: "Wspierają nas",
+      companies: [
+        { name: "MUG", logo: "mug.svg", url: "https://www.mug.pl/" },
+        {
+          name: "HexArcana",
+          logo: "hexarcana.png",
+          url: "https://hexarcana.pl",
+        },
+        {
+          name: "Wunderman Thompson",
+          logo: "wtt.png",
+          url: "https://www.wundermanthompson.com/",
+          isHidden: true,
+        },
+        {
+          name: "All for one",
+          logo: "all_for_one.png",
+          url: "https://www.all-for-one.pl/pl/",
+          isHidden: true,
+        },
+        {
+          name: "Allegro",
+          logo: "allegro.png",
+          url: "https://allegro.pl/",
+          isHidden: true,
+        },
+        {
+          name: "Egnyte",
+          logo: "egnyte.png",
+          url: "https://www.egnyte.com/",
+          isHidden: true,
+        },
+      ],
+    },
+    // {
+    //   name: "Partnerzy medialni",
+    //   companies: [{ name: "Radio afera", logo: "_blank" }],
+    // },
+    {
+      name: "Przy współpracy",
+      companies: [
+        {
+          name: "Politechnika Poznańska",
+          logo: "politechnika.png",
+          url: "https://www.put.poznan.pl/",
+        },
+      ],
+    },
   ] as Partners[];
 
   return (
@@ -30,15 +80,30 @@ const Partners = () => {
                 {name}
               </Badge>
               <div className={styles.partnersIconsWrapper}>
-                {companies.map(({ name, logo, url }) => {
+                {companies.map(({ name, logo, url, isHidden }) => {
                   return (
-                    <a className={styles.partnerIconLink} href={url} key={name}>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        alt={`${name} logo`}
-                        src={`/images/partners/${logo}`}
-                        className={styles.partnerIcon}
-                      />
+                    <a
+                      className={styles.partnerIconLink}
+                      target={isHidden ? "" : "_blank"}
+                      rel="noopener noreferrer"
+                      href={isHidden ? undefined : url}
+                      key={name}
+                    >
+                      {isHidden ? (
+                        <Icon
+                          icon={questionMark}
+                          className={styles.questionMark}
+                        />
+                      ) : (
+                        <>
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            alt={`${name} logo`}
+                            src={`images/partners/${logo}`}
+                            className={styles.partnerIcon}
+                          />
+                        </>
+                      )}
                     </a>
                   );
                 })}

@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
-import { Button, Heading, Section } from "components/ui";
+import { Heading, Section } from "components/ui";
 import styles from "./Registration.module.scss";
 
-const registrationFormURL =
-  "https://samorzad.put.poznan.pl/akai-rejestracja-zespolu";
+// const registrationFormURL =
+//   "https://samorzad.put.poznan.pl/akai-rejestracja-zespolu";
 
 const HackathonTimer = dynamic(
   () =>
@@ -23,7 +23,8 @@ export function Registration() {
       </Heading>
       <HackathonTimer />
       <div className={styles.buttonsContainer}>
-        <Button href={registrationFormURL}>Rejestracja</Button>
+        {/* <Button href={registrationFormURL}>Rejestracja</Button> */}
+        Rejestracja rusza 18.09.2023
       </div>
     </Section>
   );

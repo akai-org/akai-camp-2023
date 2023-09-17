@@ -36,10 +36,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--color-white);
+  align-self: stretch;
+  padding: 10px 25px;
+  border-radius: 8px;
+  width: var(--partner-icon-box-width);
+  height: var(--partner-icon-box-height);
 
   &:hover {
     .partnerIcon {
       transform: scale(var(--partner-icon-hover-scale));
     }
   }
+}
+
+.questionMark {
+  fill: var(--color-black);
+  width: 64px;
+  height: 64px;
 }

@@ -11,7 +11,7 @@
   gap: var(--space-l);
   margin: auto;
   max-width: var(--section-max-width);
-  padding: calc(var(--section-spacing-vertical) - 16px) calc(var(--section-spacing-horizontal) - 32px);
+  padding: var(--space-l);
 }
 
 .row {
@@ -20,9 +20,14 @@
   gap: var(--space-m);
   color: var(--color-text-alternative);
   font-size: var(--font-size-m);
+  align-items: center;
 
   & + & {
     margin-top: var(--space-m);
+  }
+
+  & li {
+    list-style: none;
   }
 
   .statuteText {
@@ -31,19 +36,21 @@
 }
 
 .logo {
-  width: 96px;
-  height: 96px;
+  width: var(--navbar-logo-size);
+  height: var(--navbar-logo-size);
 }
 
-.socialContainer{
+.socialContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--space-l);
-  .findUs{
+
+  .findUs {
     color: var(--color-text-alternative);
     font-size: var(--font-size-m);
   }
+
   .socialIcons {
     display: flex;
     gap: var(--space-l);
@@ -54,15 +61,19 @@
   fill: white;
   width: 36px;
   height: 36px;
-  transition: fill .25s ease-in-out;
-  &:hover, &:focus{
+  transition: fill 0.25s ease-in-out;
+
+  &:hover,
+  &:focus {
     fill: var(--color-text-alternative-strong);
   }
 }
 
-.links{
-  transition: color .25s ease-in-out;
-  &:hover, &:focus{
+.links {
+  transition: color 0.25s ease-in-out;
+
+  &:hover,
+  &:focus {
     color: var(--color-text-alternative-strong);
   }
 }
