@@ -31,7 +31,7 @@ export const FAQ = () => {
         {
           question: "Czy jest obowiązkowe uczestniczyć w prelekcjach?",
           answer:
-            "Nie. Czas na konferencji spożytkujcie jak tylko chcecie. Jeśli bardziej interesuje Was networking, to bardzo prosze!",
+            "Nie. Czas na konferencji spożytkujcie jak tylko chcecie. Jeśli bardziej interesuje Was networking, to bardzo proszę!",
         },
         {
           question:
