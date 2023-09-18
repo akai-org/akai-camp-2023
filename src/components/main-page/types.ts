@@ -10,20 +10,22 @@ export type Section =
   | "faq";
 
 export type Timeline = {
-  title: string,
-  place: string,
-  hour: string
-  topics?: Topic[]
-}
+  title: string;
+  location: string;
+  hour: string;
+  description?: string;
+  topics?: Topic[];
+};
 
 export type Topic = {
-  title: string,
-  abstract: string,
-  lectuer: LectuerInfo
-}
+  title: string;
+  abstract: string;
+  lecturer: LecturerInfo;
+  panel: "technical" | "soft-skills" | "universal";
+};
 
-export type LectuerInfo = {
-  avatar: string,
-  nameAndSurname: string,
-  biography: string
-}
+export type LecturerInfo = {
+  avatar: string;
+  fullName: string;
+  biography: string;
+};

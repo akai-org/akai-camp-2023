@@ -8,9 +8,9 @@ import {
   Partners,
   FAQ,
   // Schedule,
-  SchedulePlaceholder,
+  // SchedulePlaceholder,
+  ScheduleTimeline,
 } from ".";
-import { ScheduleTimeline } from "./Schedule/ScheduleTimeline";
 
 export function Content() {
   return (
@@ -24,7 +24,7 @@ export function Content() {
       <Registration />
       {/* <About /> */}
       <Location />
-      <ScheduleTimeline/>
+      <ScheduleTimeline />
       {/* <SchedulePlaceholder /> */}
       {/* <Schedule /> */}
       {/* <Mentors /> */}

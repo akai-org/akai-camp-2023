@@ -70,6 +70,12 @@
   --partner-icon-hover-scale: 1.125;
   --partner-icon-box-width: 250px;
   --partner-icon-box-height: 125px;
+
+  /* ----- timeline ----- */
+  --timeline-width: 4px;
+  --timeline-offset-left: -10px;
+  --timeline-offset-bottom: -4px;
+  --timeline-dot-size: 17px;
 }
 
 @media (max-width: 1024px) {

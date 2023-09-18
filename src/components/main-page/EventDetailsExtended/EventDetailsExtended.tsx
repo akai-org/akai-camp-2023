@@ -19,10 +19,6 @@ export function EventDetailsExtended() {
         <strong>Rozwoju Kariery</strong>.
       </Text>
 
-      {
-        //TODO: Czy tekst nie powinien być kierowany do jednej osoby?
-      }
-
       <Text size="m" className={styles.text}>
         AKAI Camp wychodzi naprzeciw rosnącym oczekiwaniom osób, które chcą
         doskonalić swoje umiejętności oraz zbudować solidne podstawy pod

@@ -6,4 +6,5 @@ export { Location } from "./Location/Location";
 export { FAQ } from "./FAQ/FAQ";
 export { Schedule } from "./Schedule/Schedule";
 export { SchedulePlaceholder } from "./Schedule/SchedulePlaceholder";
+export { ScheduleTimeline } from "./Schedule/Timeline/ScheduleTimeline";
 export { Partners } from "./Partners/Partners";
