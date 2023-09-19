@@ -24,7 +24,7 @@ export function Registration() {
       <HackathonTimer />
       <div className={styles.buttonsContainer}>
         {/* <Button href={registrationFormURL}>Rejestracja</Button> */}
-        Rejestracja rusza 18.09.2023
+        Rejestracja rusza 20.09.2023
       </div>
     </Section>
   );
