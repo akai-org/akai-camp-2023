@@ -1,0 +1,30 @@
+.lecturer__heading {
+  color: var(--color-text-strong);
+  margin-bottom: var(--space-m);
+}
+
+.lecturer__company {
+  color: #ef476f;
+}
+
+.separator {
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-m);
+}
+
+.lecturer__bio {
+  display: flex;
+  gap: var(--space-l);
+}
+
+.lecturer__image {
+  width: 224px;
+  height: 264px;
+  object-fit: cover;
+}
+
+.lecturer__bio__description {
+  & strong {
+    color: var(--color-text-strong);
+  }
+}

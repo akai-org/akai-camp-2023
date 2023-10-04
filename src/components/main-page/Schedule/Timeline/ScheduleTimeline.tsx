@@ -8,7 +8,9 @@ import { ScheduleItem } from "components/ui";
 export function ScheduleTimeline() {
   return (
     <Section id="schedule" className={styles.container}>
-      <Heading withAccent>Plan wydarzenia</Heading>
+      <Heading withAccent className={styles.container__header}>
+        Plan wydarzenia
+      </Heading>
       <ul className={styles.timeline}>
         {timelineList.map(
           ({ title, hour, location, description, topics }: Timeline) => (

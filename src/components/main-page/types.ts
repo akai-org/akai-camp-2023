@@ -20,7 +20,7 @@ export type Timeline = {
 export type Topic = {
   title: string;
   abstract: string;
-  lecturer: LecturerInfo;
+  lecturer: LecturerInfo[];
   panel: "technical" | "soft-skills" | "universal";
 };
 
@@ -28,4 +28,5 @@ export type LecturerInfo = {
   avatar: string;
   fullName: string;
   biography: string;
+  company?: string;
 };
