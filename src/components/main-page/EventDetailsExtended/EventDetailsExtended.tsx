@@ -10,12 +10,11 @@ export function EventDetailsExtended() {
         AKAI Camp 2023
       </Heading>
       <Text size="m" className={styles.text}>
-        Pierwsza edycja konferencji <strong>AKAI&nbsp;Camp</strong>{" "}
-        organizowanej przez AKAI&nbsp;- Akademickie&nbsp;Koło
-        Aplikacji&nbsp;Internetowych - odbędzie się na{" "}
-        <strong>Politechnice Poznańskiej</strong>. Ta inicjatywa jest kolejnym
-        rozdziałem inspirującej podróży, którą rozpoczęliśmy podczas Hackathonu
-        AKAI Code. Tym razem skupiamy się wokół tematyki{" "}
+        Kolejna edycja konferencji <strong>AKAI&nbsp;Camp</strong> organizowanej
+        przez AKAI&nbsp;- Akademickie&nbsp;Koło Aplikacji&nbsp;Internetowych -
+        odbędzie się na <strong>Politechnice Poznańskiej</strong>. Ta inicjatywa
+        jest kolejnym rozdziałem inspirującej podróży, którą rozpoczęliśmy
+        podczas Hackathonu AKAI Code. Tym razem skupiamy się wokół tematyki{" "}
         <strong>Rozwoju Kariery</strong>.
       </Text>
 
