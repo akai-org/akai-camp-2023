@@ -1,3 +1,10 @@
+.lecturer {
+  // height: auto;
+
+  &__bio__description {
+  }
+}
+
 .lecturer__heading {
   color: var(--color-text-strong);
   margin-bottom: var(--space-m);
@@ -18,10 +25,13 @@
 }
 
 .lecturer__image {
-  display: block;
-  width: 224px;
-  min-width: 224px;
-  height: 264px;
+  & > div {
+    display: block;
+    width: 224px;
+    min-width: 224px;
+    height: 224px;
+    min-height: 224px;
+  }
 
   & img {
     width: 100%;
@@ -29,10 +39,26 @@
     object-fit: cover;
     border-radius: 4px 16px;
   }
+
+  & figcaption {
+    display: block;
+    margin-top: 8px;
+
+    & strong {
+      color: var(--color-text-strong);
+    }
+
+    & > div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+  }
 }
 
-.lecturer__bio__description {
-  & strong {
-    color: var(--color-text-strong);
-  }
+.lecturer__icon {
+  width: 1rem;
+  height: 1rem;
+  fill: var(--color-white);
 }

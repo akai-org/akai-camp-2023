@@ -1,6 +1,7 @@
 import { LecturerInfo } from "components/main-page/types";
-import { Text } from "../Text/Text";
+import { Text, Icon } from "../";
 import styles from "./Lecture.module.scss";
+import { company } from "components/ui/Icon";
 
 type LectureType = {
   lecturers: LecturerInfo[];
@@ -9,7 +10,7 @@ type LectureType = {
 
 export const Lecture = ({ lecturers, abstract }: LectureType) => {
   return (
-    <div>
+    <div className={styles["lecturer"]}>
       <Text className={styles["lecturer__heading"]}>
         {lecturers
           .map(
@@ -19,26 +20,40 @@ export const Lecture = ({ lecturers, abstract }: LectureType) => {
           )
           .join(", ")}
       </Text>
-      <Text>{abstract}</Text>
+      <Text size="m">{abstract}</Text>
 
       {lecturers.map((lecturer) => (
         <div key={lecturer.fullName}>
           <hr className={styles.separator} />
           <div className={styles["lecturer__bio"]}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <div className={styles["lecturer__image"]}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={`images/speakers/${lecturer.avatar}`}
-                onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-                  e.currentTarget.onerror = null;
-                  e.currentTarget.src = "images/person.png";
-                }}
-                alt={lecturer.fullName}
-              />
-            </div>
+
+            <figure className={styles["lecturer__image"]}>
+              <div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`images/speakers/${lecturer.avatar}`}
+                  onError={(
+                    e: React.SyntheticEvent<HTMLImageElement, Event>,
+                  ) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = "images/person.png";
+                  }}
+                  alt={lecturer.fullName}
+                />
+              </div>
+              <figcaption>
+                <strong>{lecturer.fullName}</strong>
+                {lecturer.company && (
+                  <div>
+                    <Icon icon={company} className={styles["lecturer__icon"]} />
+                    <Text>{lecturer.company}</Text>
+                  </div>
+                )}
+              </figcaption>
+            </figure>
             <Text className={styles["lecturer__bio__description"]}>
-              <strong>{lecturer.fullName}</strong> - {lecturer.biography}
+              {lecturer.biography}
             </Text>
           </div>
         </div>

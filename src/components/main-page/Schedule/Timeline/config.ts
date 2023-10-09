@@ -14,13 +14,37 @@ export const timelineList: Timeline[] = [
       "why kitchen anything include did rule sight most hardly off gone low invented entire fresh struggle season notice bent perfect nodded bottom hour saw",
     topics: [
       {
-        title: "Prelekcja Morzego",
-        abstract: "Opis prelekcji Morzego",
+        title: "Tak dobrzy, że nie mogą Was zignorować (ani zastąpić przez AI)",
+        abstract: `Jeszcze niedawno dostanie się na Informatykę gwarantowało
+        sukces finansowy i przyjemne życie. Te czasy gwałtownie odeszły wraz z
+        eksplozją modeli językowych. Nagle okazało się, że chimerycznych,
+        zawodnych, drogich i marudzących informatyków (i informatyczki) można
+        błyskawicznie zamienić na model, który szybciej przekopiuje kawałek kodu
+        ze Stack Overflow, a przy tym nie popełni pomyłki. Czy to oznacza, że
+        zawód informatyczki/ka jest skazany na wymarcie?
+        
+        Wystąpienie poświęcone będzie temu, jak świadomie budować swoją karierę
+        w IT w dobie wszędobylskiej AI, zachowując zdrowy rozsądek i radość z
+        życia.
+        `,
         lecturer: [
           {
-            avatar: "",
+            avatar: "Mikolaj_Morzy.jpg",
             fullName: "dr hab. inż. Mikołaj Morzy",
-            biography: "Biografia Mikołaja Morzego",
+            biography: `Od lat związany jest z
+            Politechniką Poznańską, aktualnie pełni funkcję prodziekana ds nauki na
+            Wydziale Informatyki i Telekomunikacji. Na kierunkach Informatyka i
+            Sztuczna Inteligencja prowadzi zajęcia z uczenia maszynowego,
+            eksploracji danych, analizy sieci społecznościowych i przetwarzania
+            tekstu. Naukowo zajmuje się uczeniem maszynowym, szczególnie w
+            odniesieniu do języka pisanego i mówionego. Aktualnie pracuje nad
+            wykorzystaniem uczenia maszynowego do uodparniania Twittera na
+            rozprzestrzenianie się dezinformacji i teorii spiskowych w ramach
+            międzynarodowego projektu #Cyberodporność. Wcześniej pracował na
+            uniwersytetach w Niemczech i Stanach Zjednoczonych. Trzykrotnie
+            występował jako prelegent na konferencjach TEDx. W wolnych chwilach
+            miłośnik książek, biegania i windsurfingu, a także piwowar-amator.
+            `,
           },
         ],
         panel: "universal",
@@ -105,7 +129,7 @@ export const timelineList: Timeline[] = [
           "Pierwszym i podstawowym krokiem przygotowawczym do poszukiwań pracy to skonstruowanie dobrego CV, które przykuje uwagę i otwórz drzwi do zaproszenia na rozmowę rekrutacyjną. Podczas wystąpienia Asia da Wam tips & tricks na co rekruterzy zwracają uwagę przy analizie cefałek.",
         lecturer: [
           {
-            avatar: "Joanna_Mikolajewska.png",
+            avatar: "Joanna_Mikolajewska.jpg",
             fullName: "Joanna Mikołajewska",
             biography:
               "Swoje doświadczenie zdobywała, współpracując z polskimi i zagranicznymi firmami IT, gdzie rekrutowała programistów oraz kandydatów na stanowiska związane ze światem IT. Po godzinach wspiera osoby poszukujące pracy w tworzeniu ich CV oraz przeprowadza ich przez tajniki rozmów rekrutacyjnych.",
@@ -252,6 +276,7 @@ export const timelineList: Timeline[] = [
             fullName: "Marcin Ławniczak",
             biography:
               "Absolwent automatyki i robotyki (inż.) i informatyki (mgr - Systemy Rozproszone). Swój pierwszy projekt programistyczny na zlecenie wykonał w wieku 16 lat. Uważa, że oprogramowanie powinno przynosić wymierne korzyści, a nie stawiać bariery, dlatego tworzy projekty dla Pyrkonu czy Sztabu WOŚP przy Politechnice Poznańskiej. Były przewodniczący AKAI. Na studiach prowadził własną firmę programistyczną, realizując projekty aplikacji internetowych dla małych i średnich firm (pełen cykl, od wymagań biznesowych, aż po utrzymanie). Obecnie Software Engineer w Nordcloud, firmie “natywnie chmurowej”, zajmuje się rozwojem produktu SaaS do wizualizacji i optymalizacji kosztów chmury.",
+            company: "Nordcloud",
           },
           {
             avatar: "Robert_Banaszak.png",
@@ -260,7 +285,7 @@ export const timelineList: Timeline[] = [
               "Swoją przygodę z programowaniem zaczął od tworzenia gier w podstawówce. Jest absolwentem studiów inżynierskich i magisterskich Politechniki Poznańskiej na kierunku informatyka. Poza samymi studiami, jest wieloletnim członkiem AKAI, gdzie uskuteczniał swoje zamiłowanie do dzielenia się wiedzą i jeżdżenia na hackathony. W ramach swojej kariery zawodowej współpracował m.in. z Pyrkonem, pracował nad aplikacja do przechowywania i zarządzania treściami w chmurze w Egnyte oraz zajmował się rozwojem produktów zintegrowanych z różnymi dostawcami chmurowymi w Nordcloud.Obecnie, jako full-stack developer, pracuje dla Talkie.ai nad rozwojem platformy do tworzenia voicebotów, skupiającej się głównie na branży medycznej.",
           },
           {
-            avatar: "",
+            avatar: "Filip_Szostak.jpg",
             fullName: "Filip Szóstak",
             biography:
               "Absolwent informatyki na Politechnice Poznańskiej, zaangażowany działacz w Samorządzie Studentów Politechniki Poznańskiej oraz Akademickim Kole Aplikacji Internetowych. Ponadto, uczestniczył aktywnie w organizacji festiwalu muzycznego Polibuda Open Air, Sztabu Wielkiej Orkiestry Świątecznej Pomocy przy Politechnice Poznańskiej czy konferencji TEDx PUT. Jego pasja do informatyki i technologii zapoczątkowała się już w technikum, gdzie miał okazję zdobywać cenne doświadczenie w różnych obszarach zawodowych. Pracował zarówno w mniejszych, lokalnych firmach, jak i w mikroprzedsiębiorstwach. Miał również okazję zdobyć doświadczenie w dużej poznańskiej firmie z sektora bankowego, a także odbyć staż w oddziale Google w Monachium. Od niedawna pracuje jako Software Enginner w zespole pracującym nad Google Cloud.",
