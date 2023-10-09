@@ -1,19 +1,15 @@
-import { GetServerSidePropsContext } from "next";
-
-export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const filePath = "/statute.pdf";
-
-  context.res.setHeader("Location", filePath);
-  context.res.statusCode = 302;
-  context.res.end();
-
-  return {
-    props: {},
-  };
-}
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import styles from "../error.module.scss";
 
 const AkaicampRegister = () => {
-  return null;
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("/statute.pdf");
+  }, []);
+
+  return <div className={styles.errorContainer}></div>;
 };
 
 export default AkaicampRegister;
