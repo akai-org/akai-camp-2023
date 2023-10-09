@@ -26,15 +26,17 @@ export const Lecture = ({ lecturers, abstract }: LectureType) => {
           <hr className={styles.separator} />
           <div className={styles["lecturer__bio"]}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={lecturer.avatar}
-              onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-                e.currentTarget.onerror = null;
-                e.currentTarget.src = "images/person.png";
-              }}
-              className={styles["lecturer__image"]}
-              alt={lecturer.fullName}
-            />
+            <div className={styles["lecturer__image"]}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`images/speakers/${lecturer.avatar}`}
+                onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = "images/person.png";
+                }}
+                alt={lecturer.fullName}
+              />
+            </div>
             <Text className={styles["lecturer__bio__description"]}>
               <strong>{lecturer.fullName}</strong> - {lecturer.biography}
             </Text>

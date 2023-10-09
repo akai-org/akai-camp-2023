@@ -14,6 +14,8 @@ export function ScheduleItem({
   description,
   topics,
 }: Timeline) {
+  console.log(topics);
+
   const topicsTypes: {
     [key: string]: { title: string; lectures: Topic[] | undefined };
   } = {
@@ -30,6 +32,8 @@ export function ScheduleItem({
       lectures: topics?.filter((lecture) => lecture.panel === "soft-skills"),
     },
   };
+
+  console.log(Object.values(topicsTypes));
 
   return (
     <section className={styles.item}>
@@ -63,6 +67,7 @@ export function ScheduleItem({
 
           {Object.values(topicsTypes).map((panel) => (
             <>
+              {console.log(panel)}
               {panel.lectures!.length > 0 && (
                 <>
                   {panel.title && (
