@@ -44,6 +44,10 @@
     border-radius: 4px 16px;
   }
 
+  &--scale {
+    object-fit: scale-down !important;
+  }
+
   & figcaption {
     display: block;
     margin-top: 8px;

@@ -37,6 +37,9 @@ export const Lecture = ({ lecturers, abstract }: LectureType) => {
                     e.currentTarget.src = "images/person.png";
                   }}
                   alt={lecturer.fullName}
+                  className={
+                    lecturer?.scaleDown ? styles["lecturer__image--scale"] : ""
+                  }
                 />
               </div>
               <figcaption>
