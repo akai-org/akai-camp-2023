@@ -33,8 +33,6 @@ export function ScheduleItem({
     },
   };
 
-  console.log(Object.values(topicsTypes));
-
   return (
     <section className={styles.item}>
       <div className={styles["item__row"]}>
@@ -56,18 +54,16 @@ export function ScheduleItem({
           {location}
         </Text>
       </div>
-      {description && (
-        <div
-          className={classNames(
-            styles["item__row"],
-            styles["item__row--description"],
-          )}
-        >
-          <Text size="m">{description}</Text>
-
-          {Object.values(topicsTypes).map((panel) => (
+      <div
+        className={classNames(
+          styles["item__row"],
+          styles["item__row--description"],
+        )}
+      >
+        {description && <Text size="m">{description}</Text>}
+        {topics &&
+          Object.values(topicsTypes).map((panel) => (
             <>
-              {console.log(panel)}
               {panel.lectures!.length > 0 && (
                 <>
                   {panel.title && (
@@ -119,43 +115,7 @@ export function ScheduleItem({
               )}
             </>
           ))}
-
-          {/* {topics &&
-            topics.map((topic: Topic) => (
-              <Disclosure key={topic.title}>
-                {({ open }) => (
-                  <div>
-                    <Disclosure.Button className={styles.lectureButton}>
-                      <Icon
-                        icon={chevron}
-                        className={classNames(styles.chevron, {
-                          [styles.open]: open,
-                        })}
-                      />
-                      {topic.title}
-                    </Disclosure.Button>
-                    <Transition
-                      enter={styles.enter}
-                      enterFrom={styles.enterFrom}
-                      enterTo={styles.enterTo}
-                      leave={styles.leave}
-                      leaveFrom={styles.leaveFrom}
-                      leaveTo={styles.leaveTo}
-                    >
-                      <Disclosure.Panel
-                        className={classNames(styles.lecturePanel, {
-                          [styles.open]: open,
-                        })}
-                      >
-                        {topic.abstract}
-                      </Disclosure.Panel>
-                    </Transition>
-                  </div>
-                )}
-              </Disclosure>
-            ))} */}
-        </div>
-      )}
+      </div>
     </section>
   );
 }

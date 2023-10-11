@@ -26,6 +26,7 @@ export type Topic = {
 
 export type LecturerInfo = {
   avatar: string;
+  scaleDown?: boolean;
   fullName: string;
   biography: string;
   company?: string;

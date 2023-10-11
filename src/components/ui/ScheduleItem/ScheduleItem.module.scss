@@ -4,8 +4,15 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 760px) {
+      text-align: left;
+      margin-bottom: 6px;
+      font-size: 1.35rem;
+    }
+
     &--time {
       color: var(--color-text-strong);
+      align-self: flex-start;
     }
 
     &--location {
@@ -30,6 +37,8 @@
 }
 
 .chevron {
+  min-width: var(--chevron-width);
+  width: var(--chevron-width);
   height: var(--chevron-height);
   fill: var(--color-text-strong);
   transform: rotate(0);

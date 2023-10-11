@@ -4,6 +4,11 @@
 
   &__item {
     position: relative;
+    padding-bottom: 12px;
+
+    @media (max-width: 760px) {
+      padding-bottom: 30px;
+    }
 
     &::before {
       display: block;

@@ -18,6 +18,8 @@
 
 .chevron {
   height: var(--chevron-height);
+  min-width: var(--chevron-width);
+  width: var(--chevron-width);
   fill: var(--color-black);
   transform: rotate(0);
   transition: transform 0.5s ease-out;

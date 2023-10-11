@@ -5,13 +5,14 @@ export const timelineList: Timeline[] = [
     title: "Rejestracja uczestiników",
     hour: "09:00",
     location: "Centrum wykładowe PP",
+    description:
+      "Rozpoczęcie działania punktu rejestracji znajdującego się przy szatniach w budynku Centrum Wykładowego PP. Odbierz tutaj przygotowany przez nas pakiet fantów! Jeżeli potrzebujesz, możesz również zostawić swoją kurtkę lub inne rzeczy.",
   },
   {
     title: "Rozpoczęcie wydarzenia",
     hour: "10:00",
     location: "Sala CW1",
-    description:
-      "why kitchen anything include did rule sight most hardly off gone low invented entire fresh struggle season notice bent perfect nodded bottom hour saw",
+    description: "Oficjalne otwarcie eventu wraz z pierwszą prelekcją.",
     topics: [
       {
         title: "Tak dobrzy, że nie mogą Was zignorować (ani zastąpić przez AI)",
@@ -22,7 +23,7 @@ export const timelineList: Timeline[] = [
         błyskawicznie zamienić na model, który szybciej przekopiuje kawałek kodu
         ze Stack Overflow, a przy tym nie popełni pomyłki. Czy to oznacza, że
         zawód informatyczki/ka jest skazany na wymarcie?
-        
+        <br><br>
         Wystąpienie poświęcone będzie temu, jak świadomie budować swoją karierę
         w IT w dobie wszędobylskiej AI, zachowując zdrowy rozsądek i radość z
         życia.
@@ -30,7 +31,7 @@ export const timelineList: Timeline[] = [
         lecturer: [
           {
             avatar: "Mikolaj_Morzy.jpg",
-            fullName: "dr hab. inż. Mikołaj Morzy",
+            fullName: "dr hab. inż. Mikołaj Morzy",
             biography: `Od lat związany jest z
             Politechniką Poznańską, aktualnie pełni funkcję prodziekana ds nauki na
             Wydziale Informatyki i Telekomunikacji. Na kierunkach Informatyka i
@@ -55,18 +56,20 @@ export const timelineList: Timeline[] = [
     title: "Pierwsza sesja prelekcji",
     hour: "10:30",
     location: "Sale CW1 i CW2",
-    description: "Do uzupełnienia",
+    description:
+      "Pierwszy blok wykładów z podziałem na tematykę techniczną i soft-skills.",
     topics: [
       {
         title: "Czego nie robić na początku kariery w IT?",
         abstract:
-          "Pierwsza praca w IT, to zawsze duże wyzwanie. Już sam proces zabiegania o nią potrafi nieźle zniechęcić. Z kolei, patrząc z perspektywy czasu, okazuje się, że nasza branża jest nieco inna niż początkującemu programiście mogłoby się wydawać. Oczywiście, łatwo oceniać retrospektywicznie, z bagażem doświadczeń. Co innego, jeśli jest się “w centrum wydarzeń” i trzeba sprawnie podejmować decyzje dotyczące własnej kariery w IT.Dlatego też chciałbym podzielić się z Tobą moim kilkuletnim doświadczeniem jako Backend Developer. Wskażę częste błędy popełniane przez młodych programistów. Część z nich opóźnia dobry start w karierze, inne zaś ograniczają rozwój. Postaram się przekazać Tobie kilka praktycznych porad: co robić, a czego unikać. Nie zabraknie też czasu na pytania. Do zobaczenia!",
+          "Pierwsza praca w IT, to zawsze duże wyzwanie. Już sam proces zabiegania o nią potrafi nieźle zniechęcić. Z kolei, patrząc z perspektywy czasu, okazuje się, że nasza branża jest nieco inna niż początkującemu programiście mogłoby się wydawać. Oczywiście, łatwo oceniać retrospektywicznie, z bagażem doświadczeń. Co innego, jeśli jest się “w centrum wydarzeń” i trzeba sprawnie podejmować decyzje dotyczące własnej kariery w IT. Dlatego też chciałbym podzielić się z Tobą moim kilkuletnim doświadczeniem jako Backend Developer. Wskażę częste błędy popełniane przez młodych programistów. Część z nich opóźnia dobry start w karierze, inne zaś ograniczają rozwój. Postaram się przekazać Tobie kilka praktycznych porad: co robić, a czego unikać. Nie zabraknie też czasu na pytania. Do zobaczenia!",
         lecturer: [
           {
             avatar: "Lukasz_Pieta.png",
             fullName: "Łukasz Pięta",
             biography:
-              "Absolwent Politechniki Poznańskiej, Senior Backend Developer, pasjonat języka programowania Kotlin. W wolnym czasie kontrybuuję do open-source’owej, wieloplatformowej biblioteki do pisania testów w Kotlinie - Kotest.",
+              "Absolwent Politechniki Poznańskiej, Senior Backend Developer, pasjonat języka programowania Kotlin. W wolnym czasie kontrybuuje do open-source’owej, wieloplatformowej biblioteki do pisania testów w Kotlinie - Kotest.",
+            company: "Stepwise",
           },
         ],
         panel: "technical",
@@ -81,13 +84,15 @@ export const timelineList: Timeline[] = [
             fullName: "Oskar Jerzyk",
             biography:
               "Senior Software Engineer w WTT, entuzjasta rozwiązań chmurowych, absolwent Informatyki oraz specjalności Systemy Rozproszone na Politechnice Poznańskiej. Po godzinach miłośnik Formuły 1, kibic Lecha Poznań oraz producent domowego piwa rzemieślniczego.",
+            company: "WTT",
           },
         ],
         panel: "technical",
       },
       {
-        title: "Prelekcja Tobiasza",
-        abstract: "Abstrakt prelki Tobiasza",
+        title: "Jak się rozwijać i się nie wypalić?",
+        abstract:
+          "Prędkość rozwoju w branży, coraz wyższy próg wejścia, chęć wykazania się i zarabianie dużych pieniędzy. To wszystko powoduje narzucanie wielkiej presji od samego początku kariery. Coraz więcej słyszy się o wypaleniu w branży IT. W mojej prezentacji opowiem o mojej historii wypalenia po pierwszym roku pracy. Przedstawię również jak rozpoznać wypalenie i jak sobie z nim radzić. Podzielę się sposobami optymalnego rozwoju, które chciałbym znać zanim zacząłem swoją pierwszą pracę.",
         lecturer: [
           {
             avatar: "Tobiasz_Ciesielski.png",
@@ -101,7 +106,7 @@ export const timelineList: Timeline[] = [
       },
       {
         title:
-          "Odczarujmy Scruma! Kilka porad na przyjemniejszą pracę i lepsze zarobki dzięki asynchroniczności.",
+          "Odczarujmy Scruma! Kilka porad na przyjemniejszą pracę i lepsze zarobki dzięki asynchroniczności",
         abstract:
           "Czy znasz to uczucie, kiedy Scrum przestaje być Twoim sprzymierzeńcem, a bardziej przypomina niekończące się zaklęcia? Procesy jako forma sztuki dla sztuki? Spotkania, które nic nie dają? Daily sprawiające, że czujesz się jak po stoczonej bitwie? Nie martw się! Jest na to sposób! W trakcie mojej programistycznej odysei, odczarowałem te procesy i mam kilka trików na poprawę humoru, efektywności i, potencjalnie, stanu konta bankowego! Przygotuj się na porcję praktycznych wskazówek z życia wziętych, które odmienią pracę Twojego zespołu. Gotowi na magiczną transformację? Zapraszam na prelekcję!",
         lecturer: [
@@ -109,24 +114,16 @@ export const timelineList: Timeline[] = [
             avatar: "Grzegorz_Kotlarz.jpeg",
             fullName: "Grzegorz Kotlarz",
             biography:
-              "Senior Software Engineer @ 11Wizards. Emerytowany podcaster (lub w zawieszeniu, jeszcze nie zdecydował), współautor 58 odcinków podcastu AjTiTi. Zajawiony nie tylko samym programowaniem, ale też poprawą pracy zespołów. Po godzinach - piłkarz. (edytowane)",
+              "Senior Software Engineer @ 11Wizards. Emerytowany podcaster (lub w zawieszeniu, jeszcze nie zdecydował), współautor 58 odcinków podcastu AjTiTi. Zajawiony nie tylko samym programowaniem, ale też poprawą pracy zespołów. Po godzinach - piłkarz.",
             company: "11Wizards",
           },
         ],
         panel: "soft-skills",
       },
       {
-        title: "Coś od PMI",
-        abstract: "Abstrakt PMI",
-        lecturer: [
-          { avatar: "", fullName: "Nie wiadomo", biography: "Tekst randomowy" },
-        ],
-        panel: "soft-skills",
-      },
-      {
         title: "Znajdź różnicę - CV a profil na linkedin",
         abstract:
-          "Pierwszym i podstawowym krokiem przygotowawczym do poszukiwań pracy to skonstruowanie dobrego CV, które przykuje uwagę i otwórz drzwi do zaproszenia na rozmowę rekrutacyjną. Podczas wystąpienia Asia da Wam tips & tricks na co rekruterzy zwracają uwagę przy analizie cefałek.",
+          "Pierwszym i podstawowym krokiem przygotowawczym do poszukiwań pracy to skonstruowanie dobrego CV, które przykuje uwagę i otworzy drzwi do zaproszenia na rozmowę rekrutacyjną. Podczas wystąpienia Asia da Wam tips & tricks na co rekruterzy zwracają uwagę przy analizie cefałek.",
         lecturer: [
           {
             avatar: "Joanna_Mikolajewska.jpg",
@@ -141,24 +138,30 @@ export const timelineList: Timeline[] = [
     ],
   },
   {
-    title: "Przerwa kawowa + networking",
+    title: "Przerwa na kawę + networking",
     hour: "12:00",
-    location: "Sala BT027",
+    location: "Sala L053 BT",
+    description:
+      "Godzinny przerywnik między prelekcjami. Przyjdź do L053 BT na kawę i słodycze! Skorzystaj też z okazji na odwiedzenie stanowisk firm i porozmawianie z ich przedstawicielami 😀",
   },
   {
     title: "Druga sesja prelekcji",
     hour: "13:00",
     location: "Sale CW1 i CW2",
-    description: "Do uzupełnienia",
+    description:
+      "Drugi blok wykładów z podziałem na tematykę techniczną i soft-skills.",
     topics: [
       {
         title: "O hackingu w 25 minut",
-        abstract: "Abstrakt prelki",
+        abstract: "",
         lecturer: [
           {
-            avatar: "",
-            fullName: "Gynvael",
-            biography: "Biografia",
+            avatar: "Gynvael_Coldwind.svg",
+            scaleDown: true,
+            fullName: "Gynvael Coldwind",
+            biography:
+              "Programista pasjonat z zamiłowaniem do bezpieczeństwa komputerowego i niskopoziomowych aspektów informatyki. Autor bestsellerowej książki „Zrozumieć Programowanie”, redaktor naczelny i twórca eksperymentalnego magazynu Paged Out!, a także licznych artykułów, publikacji, podcastów oraz wystąpień poświęconych wspomnianym tematom. Współzałożyciel i były kapitan zespołu „Dragon Sector”, historycznie jednej z najlepszych drużyn Capture The Flag na świecie. W 2013 roku odebrał w Las Vegas (wspólnie z Mateuszem Jurczykiem) nagrodę Pwnie Award w kategorii „Najbardziej innowacyjne badanie naukowe” z dziedziny bezpieczeństwa komputerowego. Większość swojego ponad 17-letniego życia zawodowego spędził pracując w zespole bezpieczeństwa firmy Google. Obecnie jest dyrektorem zarządzającym w HexArcana Cybersecurity GmbH.",
+            company: "HexArcana",
           },
         ],
         panel: "technical",
@@ -168,7 +171,7 @@ export const timelineList: Timeline[] = [
           // eslint-disable-next-line prettier/prettier
           "Od \"baby steps\" do sprintu - niezbędnik Juniora na drodze do samodzielnego wykonywania zadań",
         abstract:
-          "Mimo, że teoretycznie czujesz gotowość do pracy, pracowałeś/aś nad projektami uczelnianymi, zderzenie z projektem komercyjnym może być bolesne i stresujące jeżeli nikt nie wyciągnie do Ciebie pomocnej dłoni. Podczas prelekcji dowiesz się, jakie zagadnienia opanować aby zrobić pozytywne wrażenie na rozmowie kwalifikacyjnej, a następnie sprawnie współpracować z zespołem developerskim w javascritp software house. Opowiemy również dlaczego ważne jest code review, jak wygląda praca z Gitflow i na czym polega automatyczny deployment aplikacji.",
+          "Mimo, że teoretycznie czujesz gotowość do pracy, pracowałeś/aś nad projektami uczelnianymi, zderzenie z projektem komercyjnym może być bolesne i stresujące jeżeli nikt nie wyciągnie do Ciebie pomocnej dłoni. Podczas prelekcji dowiesz się, jakie zagadnienia opanować aby zrobić pozytywne wrażenie na rozmowie kwalifikacyjnej, a następnie sprawnie współpracować z zespołem developerskim w javascript software house. Opowiemy również dlaczego ważne jest code review, jak wygląda praca z Gitflow i na czym polega automatyczny deployment aplikacji.",
         lecturer: [
           {
             avatar: "Natalia_Stefaniak.jpg",
@@ -227,10 +230,10 @@ export const timelineList: Timeline[] = [
       {
         title: "Rozmowa rekrutacyjna - czego szuka Twój przyszły Manager?",
         abstract:
-          " Informacje o tym czego poszukują managerowie wśród kandydatów, jakich cech / umiejętności i kogo tak naprawdę szukają na pozycjach juniorskich? Kilka przykładów pytań jakie można usłyszeć i wniosków jakie manager może na ich podstawie wyciągnąć? A na koniec lista Must have jeśli chodzi o przygotowanie się do rozmowy.",
+          " Informacje o tym czego poszukują managerowie wśród kandydatów, jakich cech&nbsp;/&nbsp;umiejętności i kogo tak naprawdę szukają na pozycjach juniorskich? Kilka przykładów pytań jakie można usłyszeć i wniosków jakie manager może na ich podstawie wyciągnąć? A na koniec lista Must have jeśli chodzi o przygotowanie się do rozmowy.",
         lecturer: [
           {
-            avatar: "",
+            avatar: "Krzysztof_Kedziorski.jpg",
             fullName: "Krzysztof Kędziorski",
             biography:
               "Pasjonat programowania, posiadający blisko 14-letnie doświadczenie w branży IT. Karierę zawodową rozpoczynał od programowania w C++, jednak to programowanie w Javie dostarcza mu najwięcej przyjemności i z tą technologią związał swoją zawodową przyszłość. Co kilka lat odkłada IDE na bok i wchodzi w rolę managera, by następnie po jakimś czasie ponownie wracać do programowania. Obecnie jako Engineering Manager w Egnyte współtworzy platformę, która pomaga zwiększać poziom bezpieczeństwa firmowych danych i budować świadomość użytkowników.",
@@ -240,13 +243,14 @@ export const timelineList: Timeline[] = [
         panel: "soft-skills",
       },
       {
-        title: "Prelka Allegro",
-        abstract: "Abstrakt prelki Allegro",
+        title: "Jak zarządzić swoim managerem",
+        abstract: "",
         lecturer: [
           {
-            avatar: "",
-            fullName: "Jakiś prelegent",
-            biography: "bio",
+            avatar: "Jedrzej_Krzysztofiak.png",
+            fullName: "Jędrzej Krzysztofiak",
+            biography:
+              "Od ponad 10 lat związany z Allegro, pełniąc role testera, programisty oraz team lidera. Na co dzień ze swoim zespołem zajmuje się rejestracją, logowaniem i odzyskiwaniem hasła na platformie.",
             company: "Allegro",
           },
         ],
@@ -257,13 +261,15 @@ export const timelineList: Timeline[] = [
   {
     title: "Przerwa obiadowa",
     hour: "14:30",
-    location: "Sala BT027",
+    location: "Sala L053 BT",
+    description:
+      "Druga i ostatnia przerwa podczas konferencji. Zawitaj znowu do L053 BT na lunch w postaci pizzy!",
   },
   {
     title: "Trzecia sesja prelekcji",
     hour: "15:30",
     location: "Sale CW1 i CW2",
-    description: "Do napisania",
+    description: "Trzeci blok wykładowy w postaci panelu dyskusyjnego.",
     topics: [
       {
         title:

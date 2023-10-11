@@ -2,6 +2,7 @@ import { LecturerInfo } from "components/main-page/types";
 import { Text, Icon } from "../";
 import styles from "./Lecture.module.scss";
 import { company } from "components/ui/Icon";
+import parse from "html-react-parser";
 
 type LectureType = {
   lecturers: LecturerInfo[];
@@ -13,14 +14,10 @@ export const Lecture = ({ lecturers, abstract }: LectureType) => {
     <div className={styles["lecturer"]}>
       <Text className={styles["lecturer__heading"]}>
         {lecturers
-          .map(
-            (lecturer: LecturerInfo) =>
-              lecturer.fullName +
-              (lecturer?.company ? " (" + lecturer.company + ")" : ""),
-          )
+          .map((lecturer: LecturerInfo) => lecturer.fullName)
           .join(", ")}
       </Text>
-      <Text size="m">{abstract}</Text>
+      <Text size="m">{parse(abstract)}</Text>
 
       {lecturers.map((lecturer) => (
         <div key={lecturer.fullName}>

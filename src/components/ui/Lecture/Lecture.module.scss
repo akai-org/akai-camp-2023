@@ -22,6 +22,10 @@
 .lecturer__bio {
   display: flex;
   gap: var(--space-l);
+
+  @media (max-width: 760px) {
+    flex-direction: column;
+  }
 }
 
 .lecturer__image {
