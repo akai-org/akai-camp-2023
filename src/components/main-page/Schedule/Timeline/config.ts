@@ -65,7 +65,7 @@ export const timelineList: Timeline[] = [
           "Pierwsza praca w IT, to zawsze duże wyzwanie. Już sam proces zabiegania o nią potrafi nieźle zniechęcić. Z kolei, patrząc z perspektywy czasu, okazuje się, że nasza branża jest nieco inna niż początkującemu programiście mogłoby się wydawać. Oczywiście, łatwo oceniać retrospektywicznie, z bagażem doświadczeń. Co innego, jeśli jest się “w centrum wydarzeń” i trzeba sprawnie podejmować decyzje dotyczące własnej kariery w IT. Dlatego też chciałbym podzielić się z Tobą moim kilkuletnim doświadczeniem jako Backend Developer. Wskażę częste błędy popełniane przez młodych programistów. Część z nich opóźnia dobry start w karierze, inne zaś ograniczają rozwój. Postaram się przekazać Tobie kilka praktycznych porad: co robić, a czego unikać. Nie zabraknie też czasu na pytania. Do zobaczenia!",
         lecturer: [
           {
-            avatar: "Lukasz_Pieta.png",
+            avatar: "Lukasz_Pieta.jpg",
             fullName: "Łukasz Pięta",
             biography:
               "Absolwent Politechniki Poznańskiej, Senior Backend Developer, pasjonat języka programowania Kotlin. W wolnym czasie kontrybuuje do open-source’owej, wieloplatformowej biblioteki do pisania testów w Kotlinie - Kotest.",
@@ -95,7 +95,7 @@ export const timelineList: Timeline[] = [
           "Prędkość rozwoju w branży, coraz wyższy próg wejścia, chęć wykazania się i zarabianie dużych pieniędzy. To wszystko powoduje narzucanie wielkiej presji od samego początku kariery. Coraz więcej słyszy się o wypaleniu w branży IT. W mojej prezentacji opowiem o mojej historii wypalenia po pierwszym roku pracy. Przedstawię również jak rozpoznać wypalenie i jak sobie z nim radzić. Podzielę się sposobami optymalnego rozwoju, które chciałbym znać zanim zacząłem swoją pierwszą pracę.",
         lecturer: [
           {
-            avatar: "Tobiasz_Ciesielski.png",
+            avatar: "Tobiasz_Ciesielski.jpg",
             fullName: "Tobiasz Ciesielski",
             biography:
               "Cześć, jestem Tobiasz i pracuję jako Front-end Developer. Jestem absolwentem Informatyki na Politechnice Poznańskiej. Swoją karierę zacząłem w Prowly, gdzie nadal kontynuuję swoją przygodę rozwijając aplikację w Angularze. Po pracy dużo trenuję i prowadzę social media w tematyce rozwoju. Dzielę się również wiedzą techniczną na linkedin.",
@@ -111,7 +111,7 @@ export const timelineList: Timeline[] = [
           "Czy znasz to uczucie, kiedy Scrum przestaje być Twoim sprzymierzeńcem, a bardziej przypomina niekończące się zaklęcia? Procesy jako forma sztuki dla sztuki? Spotkania, które nic nie dają? Daily sprawiające, że czujesz się jak po stoczonej bitwie? Nie martw się! Jest na to sposób! W trakcie mojej programistycznej odysei, odczarowałem te procesy i mam kilka trików na poprawę humoru, efektywności i, potencjalnie, stanu konta bankowego! Przygotuj się na porcję praktycznych wskazówek z życia wziętych, które odmienią pracę Twojego zespołu. Gotowi na magiczną transformację? Zapraszam na prelekcję!",
         lecturer: [
           {
-            avatar: "Grzegorz_Kotlarz.jpeg",
+            avatar: "Grzegorz_Kotlarz.jpg",
             fullName: "Grzegorz Kotlarz",
             biography:
               "Senior Software Engineer @ 11Wizards. Emerytowany podcaster (lub w zawieszeniu, jeszcze nie zdecydował), współautor 58 odcinków podcastu AjTiTi. Zajawiony nie tylko samym programowaniem, ale też poprawą pracy zespołów. Po godzinach - piłkarz.",
@@ -181,7 +181,7 @@ export const timelineList: Timeline[] = [
             company: "MUG Software",
           },
           {
-            avatar: "Pawel_Ruminkiewicz.png",
+            avatar: "Pawel_Ruminkiewicz.jpg",
             fullName: "Paweł Ruminkiewicz",
             biography:
               "Tech Lead w MUG Software. Poszukuje najbardziej efektywnych i najbezpieczniejszych rozwiązań dla realizowanych projektów. Aktywny programista, który pomógł już wielu startującym w świecie developmentu aplikacji webowych.",
@@ -211,14 +211,14 @@ export const timelineList: Timeline[] = [
           "Zacznij swoją przygodę z LinkedIn! Dowiedz się, jak uzupełnić swój profil, jak budować swoją markę osobistą i odkryj sposoby, aby wyróżnić się w tłumie zawodowych profili. Podkreśl swoje unikalne cechy i skutecznie komunikuj swoje osiągnięcia. Twoja osobista marka może stać się kluczem do sukcesu!",
         lecturer: [
           {
-            avatar: "Danuta_Bialecka.png",
+            avatar: "Danuta_Bialecka.jpg",
             fullName: "Danuta Białęcka",
             biography:
               "Od ponad 10 lat zajmująca się tematyką i różnymi wyzwaniami HR, w swoich działaniach stawią na aspekt międzynarodowy. Doświadczenie zdobywała w jednej z angielskich firm, by teraz od ponad dwóch lat, rozwijać się w firmie z branży IT, jako Specjalistka ds. Employer Brandingu w All for One Poland. Pasjonuje się tworzeniem autentycznych i inspirujących treści o marce, kreatywnie angażując pracowników w działania budowania silnego wizerunku pracodawcy",
             company: "All For One",
           },
           {
-            avatar: "Gabriela_Grzeszcz.png",
+            avatar: "Gabriela_Grzeszcz.jpg",
             fullName: "Gabriela Grzeszcz",
             biography:
               "Z wykształcenia polonistka, dziennikarka, specjalistka od reklamy i promocji. Zawodowo od kilku lat związana z komunikacją wewnętrzną i Employer Brandingiem. Zdobywała doświadczenie w międzynarodowych firmach IT, takich jak Capgemini oraz All for One. Entuzjastka zaangażowania pracowników w działania w mediach społecznościowych i z zakresu Społecznej Odpowiedzialności Biznesu.",
@@ -247,7 +247,7 @@ export const timelineList: Timeline[] = [
         abstract: "",
         lecturer: [
           {
-            avatar: "Jedrzej_Krzysztofiak.png",
+            avatar: "Jedrzej_Krzysztofiak.jpg",
             fullName: "Jędrzej Krzysztofiak",
             biography:
               "Od ponad 10 lat związany z Allegro, pełniąc role testera, programisty oraz team lidera. Na co dzień ze swoim zespołem zajmuje się rejestracją, logowaniem i odzyskiwaniem hasła na platformie.",
@@ -285,22 +285,25 @@ export const timelineList: Timeline[] = [
             company: "Nordcloud",
           },
           {
-            avatar: "Robert_Banaszak.png",
+            avatar: "Robert_Banaszak.jpg",
             fullName: "Robert Banaszak",
             biography:
               "Swoją przygodę z programowaniem zaczął od tworzenia gier w podstawówce. Jest absolwentem studiów inżynierskich i magisterskich Politechniki Poznańskiej na kierunku informatyka. Poza samymi studiami, jest wieloletnim członkiem AKAI, gdzie uskuteczniał swoje zamiłowanie do dzielenia się wiedzą i jeżdżenia na hackathony. W ramach swojej kariery zawodowej współpracował m.in. z Pyrkonem, pracował nad aplikacja do przechowywania i zarządzania treściami w chmurze w Egnyte oraz zajmował się rozwojem produktów zintegrowanych z różnymi dostawcami chmurowymi w Nordcloud.Obecnie, jako full-stack developer, pracuje dla Talkie.ai nad rozwojem platformy do tworzenia voicebotów, skupiającej się głównie na branży medycznej.",
+            company: "Talkie.ai",
           },
           {
             avatar: "Filip_Szostak.jpg",
             fullName: "Filip Szóstak",
             biography:
               "Absolwent informatyki na Politechnice Poznańskiej, zaangażowany działacz w Samorządzie Studentów Politechniki Poznańskiej oraz Akademickim Kole Aplikacji Internetowych. Ponadto, uczestniczył aktywnie w organizacji festiwalu muzycznego Polibuda Open Air, Sztabu Wielkiej Orkiestry Świątecznej Pomocy przy Politechnice Poznańskiej czy konferencji TEDx PUT. Jego pasja do informatyki i technologii zapoczątkowała się już w technikum, gdzie miał okazję zdobywać cenne doświadczenie w różnych obszarach zawodowych. Pracował zarówno w mniejszych, lokalnych firmach, jak i w mikroprzedsiębiorstwach. Miał również okazję zdobyć doświadczenie w dużej poznańskiej firmie z sektora bankowego, a także odbyć staż w oddziale Google w Monachium. Od niedawna pracuje jako Software Enginner w zespole pracującym nad Google Cloud.",
+            company: "Google",
           },
           {
             avatar: "Tomasz_Gil.jpg",
             fullName: "Tomasz Gil",
             biography:
               "Pracuję jako Frontend Software Engineer, z ponad 7-letnim doświadczeniem w branży. Miałem możliwość współpracować bezpośrednio z markami takimi jak Revofund czy Masterhub, projektując i tworząc strony internetowe. W Egnyte, pracowałem nad aplikacją internetową wykorzystywaną przez ponad 17 000 firm na całym świecie, pozwalającą na przechowywanie, zarządzanie i współdzielenie plików. W Rvvup brałem udział w tworzeniu platformy do przetwarzania płatności dla sklepów internetowych, od jej powstania do pierwszych klientów. Jestem absolwentem studiów inżynierskich i magisterskich Politechniki Poznańskiej Wydziału Informatyki i wieloletnim członkiem AKAI.",
+            company: "Rvvup",
           },
         ],
         panel: "soft-skills",
