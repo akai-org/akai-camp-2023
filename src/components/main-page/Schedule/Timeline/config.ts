@@ -273,7 +273,7 @@ export const timelineList: Timeline[] = [
     topics: [
       {
         title:
-          "Produkt/Software House/Freelance/Korpo - z czym to się je i czy trzeba złapać je wszystkie?",
+          "Produkt / Software House / Freelance / Korpo - z czym to się je i czy trzeba złapać je wszystkie?",
         abstract:
           "Subiektywny przegląd doświadczeń z różnymi rodzajami pracy w formie panelu dyskusyjnego z pytaniami od publiczności.",
         lecturer: [

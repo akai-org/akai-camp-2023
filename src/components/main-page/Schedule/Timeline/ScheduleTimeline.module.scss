@@ -2,6 +2,10 @@
   list-style: none;
   padding-left: 16px;
 
+  @media (max-width: 482px){
+    margin-left: 12px;
+  }
+
   &__item {
     position: relative;
     padding-bottom: 12px;
