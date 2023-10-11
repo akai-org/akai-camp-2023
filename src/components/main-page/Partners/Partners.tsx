@@ -26,15 +26,14 @@ const Partners = () => {
           url: "https://hexarcana.pl",
         },
         {
-          name: "Wunderman Thompson",
-          logo: "wtt.png",
-          url: "https://www.wundermanthompson.com/",
-          isHidden: true,
-        },
-        {
           name: "All for one",
           logo: "all_for_one.png",
           url: "https://www.all-for-one.pl/pl/",
+        },
+        {
+          name: "Wunderman Thompson",
+          logo: "wtt.png",
+          url: "https://www.wundermanthompson.com/",
           isHidden: true,
         },
         {
@@ -51,10 +50,12 @@ const Partners = () => {
         },
       ],
     },
-    // {
-    //   name: "Partnerzy medialni",
-    //   companies: [{ name: "Radio afera", logo: "_blank" }],
-    // },
+    {
+      name: "Partnerzy medialni",
+      companies: [
+        { name: "Hackyeah", logo: "hackyeah.jpg", url: "https://hackyeah.pl" },
+      ],
+    },
     {
       name: "Przy współpracy",
       companies: [
