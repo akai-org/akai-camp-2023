@@ -13,6 +13,7 @@ const sections: readonly SectionConfig[] = [
   { key: "hero", url: "#hero", hidden: true },
   { key: "akaiCode", name: "AKAI Camp ’23", url: "#event-details" },
   { key: "registration", name: "Rejestracja", url: "#registration" },
+  { key: "timetable", name: "Plan Wydarzenia", url: "#schedule" },
   { key: "partners", name: "Partnerzy", url: "#partners" },
   { key: "faq", name: "FAQ", url: "#faq" },
 ] as const;
