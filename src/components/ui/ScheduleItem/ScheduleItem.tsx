@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./ScheduleItem.module.scss";
 import classNames from "classnames";
 import { Timeline, Topic } from "components/main-page/types";
@@ -61,7 +62,7 @@ export function ScheduleItem({
         {description && <Text size="m">{description}</Text>}
         {topics &&
           Object.values(topicsTypes).map((panel) => (
-            <>
+            <React.Fragment key={panel.title}>
               {panel.lectures!.length > 0 && (
                 <>
                   {panel.title && (
@@ -111,7 +112,7 @@ export function ScheduleItem({
                   ))}
                 </>
               )}
-            </>
+            </React.Fragment>
           ))}
       </div>
     </section>
