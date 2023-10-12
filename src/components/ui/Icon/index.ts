@@ -21,4 +21,5 @@ export {
   mdiSendLock as sendLock,
   mdiPartyPopper as party,
   mdiHelp as questionMark,
+  mdiDomain as company,
 } from "@mdi/js";

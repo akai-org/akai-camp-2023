@@ -15,6 +15,7 @@
   --color-text-strong: #f28705;
   --color-text-alternative: #fff;
   --color-text-alternative-strong: #f7a823;
+  --color-red: #ef476f;
   --color-grey: #d8d8d8;
   --color-black: #282828;
   --color-white: #fff;
@@ -63,6 +64,7 @@
 
   /* ----- FAQ----- */
   --chevron-height: 32px;
+  --chevron-width: 32px;
 
   /* ----- partners ----- */
   --partner-icon-max-width: 196px;
@@ -70,6 +72,12 @@
   --partner-icon-hover-scale: 1.125;
   --partner-icon-box-width: 250px;
   --partner-icon-box-height: 125px;
+
+  /* ----- timeline ----- */
+  --timeline-width: 4px;
+  --timeline-offset-left: -10px;
+  --timeline-offset-bottom: -4px;
+  --timeline-dot-size: 17px;
 }
 
 @media (max-width: 1024px) {

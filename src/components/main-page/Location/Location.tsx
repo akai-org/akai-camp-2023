@@ -39,11 +39,11 @@ export function Location() {
             </p>
             <p className={styles.text}>
               <Icon icon={bus} className={styles.busIcon} />
-              Przystanek Kórnicka: 6, 7, 8, 13, 17
+              Przystanek Kórnicka: 6, 7, 13
             </p>
             <p className={styles.text}>
               <Icon icon={bus} className={styles.busIcon} />
-              Przystanek Baraniaka: 6, 7, 8, 17
+              Przystanek Baraniaka: 6, 7
             </p>
           </div>
         </div>
