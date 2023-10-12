@@ -303,7 +303,6 @@ export const timelineList: Timeline[] = [
             fullName: "Tomasz Gil",
             biography:
               "Pracuję jako Frontend Software Engineer, z ponad 7-letnim doświadczeniem w branży. Miałem możliwość współpracować bezpośrednio z markami takimi jak Revofund czy Masterhub, projektując i tworząc strony internetowe. W Egnyte, pracowałem nad aplikacją internetową wykorzystywaną przez ponad 17 000 firm na całym świecie, pozwalającą na przechowywanie, zarządzanie i współdzielenie plików. W Rvvup brałem udział w tworzeniu platformy do przetwarzania płatności dla sklepów internetowych, od jej powstania do pierwszych klientów. Jestem absolwentem studiów inżynierskich i magisterskich Politechniki Poznańskiej Wydziału Informatyki i wieloletnim członkiem AKAI.",
-            company: "Rvvup",
           },
         ],
         panel: "soft-skills",
