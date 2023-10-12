@@ -3,12 +3,9 @@ import {
   Hero,
   EventDetailsExtended,
   Registration,
-  // About,
   Location,
   Partners,
   FAQ,
-  // Schedule,
-  // SchedulePlaceholder,
   ScheduleTimeline,
 } from ".";
 
@@ -22,12 +19,8 @@ export function Content() {
       <Hero />
       <EventDetailsExtended />
       <Registration />
-      {/* <About /> */}
       <Location />
       <ScheduleTimeline />
-      {/* <SchedulePlaceholder /> */}
-      {/* <Schedule /> */}
-      {/* <Mentors /> */}
       <Partners />
       <FAQ />
     </>
