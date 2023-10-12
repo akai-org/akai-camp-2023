@@ -14,8 +14,6 @@ export function ScheduleItem({
   description,
   topics,
 }: Timeline) {
-  console.log(topics);
-
   const topicsTypes: {
     [key: string]: { title: string; lectures: Topic[] | undefined };
   } = {

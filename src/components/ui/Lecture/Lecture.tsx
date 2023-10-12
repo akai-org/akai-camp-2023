@@ -23,8 +23,6 @@ export const Lecture = ({ lecturers, abstract }: LectureType) => {
         <div key={lecturer.fullName}>
           <hr className={styles.separator} />
           <div className={styles["lecturer__bio"]}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-
             <figure className={styles["lecturer__image"]}>
               <div>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -52,9 +50,7 @@ export const Lecture = ({ lecturers, abstract }: LectureType) => {
                 )}
               </figcaption>
             </figure>
-            <Text className={styles["lecturer__bio__description"]}>
-              {lecturer.biography}
-            </Text>
+            <Text>{lecturer.biography}</Text>
           </div>
         </div>
       ))}
