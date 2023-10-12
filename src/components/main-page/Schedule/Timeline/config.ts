@@ -247,8 +247,8 @@ export const timelineList: Timeline[] = [
         abstract: "",
         lecturer: [
           {
-            avatar: "Jedrzej_Krzysztofiak.jpg",
-            fullName: "Jędrzej Krzysztofiak",
+            avatar: "Jedrzej_Krysztofiak.jpg",
+            fullName: "Jędrzej Krysztofiak",
             biography:
               "Od ponad 10 lat związany z Allegro, pełniąc role testera, programisty oraz team lidera. Na co dzień ze swoim zespołem zajmuje się rejestracją, logowaniem i odzyskiwaniem hasła na platformie.",
             company: "Allegro",
