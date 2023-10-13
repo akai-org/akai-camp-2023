@@ -77,7 +77,7 @@ export const timelineList: Timeline[] = [
       {
         title: "Projektowanie aplikacji serverless na AWS",
         abstract:
-          "Zastanawiałeś się w jaki sposób zbudować aplikację najmniejszym kosztem i w najkrótszym czasie? Z pomocą w dzisiejszych czasach przychodzą chmury publiczne, wśród których niezmiennie od lat króluje AWS. Poznaj sposoby budowy rozwiązań w oparciu o usługi serverless i przekonaj się czy aby na pewno zawsze są one najlepszym i najbardziej efektywnym rozwiązaniem.",
+          "Zastanawiałeś się w jaki sposób zbudować aplikację najmniejszym kosztem i w najkrótszym czasie? Z pomocą przychodzą chmury publiczne, wśród których niezmiennie od lat króluje AWS. Poznaj sposoby budowy rozwiązań w oparciu o usługi serverless i przekonaj się czy aby na pewno zawsze są one najlepszym i najbardziej efektywnym rozwiązaniem.",
         lecturer: [
           {
             avatar: "Oskar_Jerzyk.jpg",
