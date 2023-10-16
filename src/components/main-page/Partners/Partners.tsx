@@ -44,7 +44,6 @@ const Partners = () => {
           name: "Allegro",
           logo: "allegro.png",
           url: "https://allegro.pl/",
-          isHidden: true,
         },
       ],
     },
