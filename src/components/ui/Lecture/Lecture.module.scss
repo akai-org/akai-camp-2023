@@ -47,6 +47,11 @@
         align-items: center;
         gap: 10px;
       }
+
+      & svg + p {
+        align-self: flex-start;
+        line-height: 1.25rem;
+      }
     }
   }
 
@@ -54,6 +59,7 @@
     width: 1rem;
     height: 1rem;
     fill: var(--color-white);
+    align-self: flex-start;
   }
 }
 

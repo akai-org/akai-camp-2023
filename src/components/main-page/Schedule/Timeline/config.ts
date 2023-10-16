@@ -121,6 +121,29 @@ export const timelineList: Timeline[] = [
         panel: "soft-skills",
       },
       {
+        title:
+          "Jak wynieść coś więcej niż kilka gumowych kaczuszek z Hackatonu? Kilka praktycznych porad od zwycięzców HackYeach 2023",
+        abstract:
+          "Hackatony to świetna okazja do zdobycia nowych umiejętności oraz wygrania niezłych pieniędzy. Jednak stworzenie prototypu w 24 godziny jest ciężkim i wymagającym zadaniem. Przedstawimy wam kilka praktycznych porad jak wynieść coś więcej niż tylko kilka gumowych kaczek z maratonu programowania.",
+        lecturer: [
+          {
+            avatar: "Mateusz_Karlowski.jpg",
+            fullName: "Mateusz Karłowski",
+            biography:
+              "Student Informatyki na Politechnice Poznańskiej zajawiony programowaniem. Zwycięzca dwóch hackathonów, małego lokalnego PhD: Poznań Hack Day 2021 oraz dużego międzynarodowego HackYeah 2023. W wolnym czasie interesuję się popkulturą, filozofia oraz kolarstwem górskim.",
+            company: "Duża Dawka Development",
+          },
+          {
+            avatar: "Szymon_Pasieczny.jpg",
+            fullName: "Szymon Pasieczny",
+            biography:
+              "Student informatyki i programista, który na co dzień rozwija się jako junior full stack developer w All for One Poland. Poza kodowaniem relaksuje się grając na gitarze i pedałując na rowerze. Zwycięzca HackYeah 2023 i finalista Ecocraft 2022.",
+            company: "All for One Poland",
+          },
+        ],
+        panel: "soft-skills",
+      },
+      {
         title: "Znajdź różnicę - CV a profil na linkedin",
         abstract:
           "Pierwszym i podstawowym krokiem przygotowawczym do poszukiwań pracy to skonstruowanie dobrego CV, które przykuje uwagę i otworzy drzwi do zaproszenia na rozmowę rekrutacyjną. Podczas wystąpienia Asia da Wam tips & tricks na co rekruterzy zwracają uwagę przy analizie cefałek.",
