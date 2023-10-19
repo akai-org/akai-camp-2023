@@ -66,6 +66,11 @@ const Partners = () => {
           logo: "fundacja_pp.svg",
           url: "http://www.fundacjapp.poznan.pl",
         },
+        {
+          name: "Wydział Informatyki i Telekomunikacji",
+          logo: "wiit.png",
+          url: "https://cat.put.poznan.pl",
+        },
       ],
     },
   ] as Partners[];
