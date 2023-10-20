@@ -52,3 +52,14 @@
 .container__header {
   margin-bottom: var(--space-2xl);
 }
+
+.download {
+  text-align: center;
+  margin-bottom: 24px;
+  transition: color 0.25s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-alternative-strong);
+  }
+}

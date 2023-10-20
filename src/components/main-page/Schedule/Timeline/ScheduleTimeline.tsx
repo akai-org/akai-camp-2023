@@ -1,4 +1,4 @@
-import { Section, Heading } from "components/ui";
+import { Section, Heading, Text } from "components/ui";
 import React from "react";
 import styles from "./ScheduleTimeline.module.scss";
 import { Timeline } from "../../types";
@@ -11,6 +11,9 @@ export function ScheduleTimeline() {
       <Heading withAccent className={styles.container__header}>
         Plan wydarzenia
       </Heading>
+      <Text size="m" className={styles.download}>
+        <a href="/schedule.pdf">Pobierz w formacie PDF</a>
+      </Text>
       <ul className={styles.timeline}>
         {timelineList.map(
           ({ title, hour, location, description, topics }: Timeline) => (
