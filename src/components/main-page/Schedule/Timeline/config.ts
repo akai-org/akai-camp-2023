@@ -192,7 +192,7 @@ export const timelineList: Timeline[] = [
       {
         title:
           // eslint-disable-next-line prettier/prettier
-          'Od "baby steps" do sprintu - niezbędnik Juniora na drodze do samodzielnego wykonywania zadań',
+          "Od \"baby steps\" do sprintu - niezbędnik Juniora na drodze do samodzielnego wykonywania zadań",
         abstract:
           "Mimo, że teoretycznie czujesz gotowość do pracy, pracowałeś/aś nad projektami uczelnianymi, zderzenie z projektem komercyjnym może być bolesne i stresujące jeżeli nikt nie wyciągnie do Ciebie pomocnej dłoni. Podczas prelekcji dowiesz się, jakie zagadnienia opanować aby zrobić pozytywne wrażenie na rozmowie kwalifikacyjnej, a następnie sprawnie współpracować z zespołem developerskim w javascript software house. Opowiemy również dlaczego ważne jest code review, jak wygląda praca z Gitflow i na czym polega automatyczny deployment aplikacji.",
         lecturer: [
