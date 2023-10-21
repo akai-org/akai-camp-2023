@@ -192,7 +192,7 @@ export const timelineList: Timeline[] = [
       {
         title:
           // eslint-disable-next-line prettier/prettier
-          "Od \"baby steps\" do sprintu - niezbędnik Juniora na drodze do samodzielnego wykonywania zadań",
+          'Od "baby steps" do sprintu - niezbędnik Juniora na drodze do samodzielnego wykonywania zadań',
         abstract:
           "Mimo, że teoretycznie czujesz gotowość do pracy, pracowałeś/aś nad projektami uczelnianymi, zderzenie z projektem komercyjnym może być bolesne i stresujące jeżeli nikt nie wyciągnie do Ciebie pomocnej dłoni. Podczas prelekcji dowiesz się, jakie zagadnienia opanować aby zrobić pozytywne wrażenie na rozmowie kwalifikacyjnej, a następnie sprawnie współpracować z zespołem developerskim w javascript software house. Opowiemy również dlaczego ważne jest code review, jak wygląda praca z Gitflow i na czym polega automatyczny deployment aplikacji.",
         lecturer: [
@@ -291,7 +291,7 @@ export const timelineList: Timeline[] = [
   {
     title: "Trzecia sesja prelekcji",
     hour: "15:30",
-    location: "Sale CW1 i CW2",
+    location: "Sala CW1",
     description: "Trzeci blok wykładowy w postaci panelu dyskusyjnego.",
     topics: [
       {
@@ -328,7 +328,7 @@ export const timelineList: Timeline[] = [
               "Pracuję jako Frontend Software Engineer, z ponad 7-letnim doświadczeniem w branży. Miałem możliwość współpracować bezpośrednio z markami takimi jak Revofund czy Masterhub, projektując i tworząc strony internetowe. W Egnyte, pracowałem nad aplikacją internetową wykorzystywaną przez ponad 17 000 firm na całym świecie, pozwalającą na przechowywanie, zarządzanie i współdzielenie plików. W Rvvup brałem udział w tworzeniu platformy do przetwarzania płatności dla sklepów internetowych, od jej powstania do pierwszych klientów. Jestem absolwentem studiów inżynierskich i magisterskich Politechniki Poznańskiej Wydziału Informatyki i wieloletnim członkiem AKAI.",
           },
         ],
-        panel: "soft-skills",
+        panel: "technical",
       },
     ],
   },
